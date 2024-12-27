@@ -122,7 +122,7 @@ $('.our-top').owlCarousel({
           nav:false
       },
       1000:{
-          items:4,
+          items:6,
       }
   }
   })
@@ -130,7 +130,7 @@ $('.our-top').owlCarousel({
   $('.our-bot').owlCarousel({
     items:4,
     loop:true,
-    margin:40,
+    margin:20,
     autoplay: true,
     nav: false,
     dots: false,
@@ -148,7 +148,7 @@ $('.our-top').owlCarousel({
           nav:false
       },
       1000:{
-          items:4,
+          items:6,
       }
   }
   })

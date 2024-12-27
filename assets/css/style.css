@@ -342,7 +342,22 @@ ul li:hover::after{
     background-position: 0 -5vw;
 }
 .s2{
-    background: url(../images/cover2.jpg) no-repeat;  
+    background: url(../images/h2.webp) no-repeat;  
+    background-size: cover;
+    background-position: 0 -5vw;
+}
+.s3{
+    background: url(../images/h3.webp) no-repeat;  
+    background-size: cover;
+    background-position: 0 -5vw;
+}
+.s4{
+    background: url(../images/h6.webp) no-repeat;  
+    background-size: cover;
+    background-position: 0 -5vw;
+}
+.s5{
+    background: url(../images/h5.webp) no-repeat;  
     background-size: cover;
     background-position: 0 -5vw;
 }
@@ -509,7 +524,7 @@ ul li:hover::after{
     top: 8vw;
     left: 12vw;
     z-index: 1;
-    opacity: .5;
+    opacity: .1;
     /* transition: all ease .s; */
 }
 #home-tri2{
@@ -518,7 +533,7 @@ ul li:hover::after{
     top: 17vw;
     left: 13vw;
     z-index: 1; 
-    opacity: .5;
+    opacity: .1;
     /* transition: all ease .s; */
 }
 .parallax{
@@ -1164,7 +1179,7 @@ color: #EE233C;
     background-color: #EDEDEF;
 }
 .our-container{
-    width: 80%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1834,8 +1849,17 @@ color: #EE233C;
       width: 34vw;
       top: 55vw;
     }
-    .s1,.s2 {
+    .s1,.s2,.s3,.s4,.s5 {
         background-position: center;
+    }
+    .s4{
+        background-position: 85% 0;
+    }
+    .s5 {
+        background-position-x: 45%;
+    }
+    .s3{
+        background-position: 50% -50vw;
     }
     #home-tri2 {
         width: 40vw;
