@@ -423,11 +423,12 @@ ul li:hover::after{
     justify-content: center;
     padding: 0 1.5vw;
     margin-top: 2vw;
-    transition:all ease .4s;
     cursor: pointer;
+    transition: all ease .4s !important;
 }
 .home-in-btn{
     color: #fff;
+    transition: all ease .4s;
 }
 .home-btn:hover{
     background-position: 100%;
