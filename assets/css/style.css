@@ -168,6 +168,9 @@ ul li:hover::after{
 .mob-logo{
     display: none;
 }
+#mob-nav-btn{
+    display: none;
+}
   /* toggle button */
  
   .frame, .menu-icon {
@@ -1809,7 +1812,7 @@ color: #EE233C;
         position: fixed ;
         top: 6vw;
         left: 2vw;
-        z-index: 100;
+        z-index: 900;
     }
     #navbar{
         position: fixed;
@@ -1836,6 +1839,7 @@ color: #EE233C;
     }
     #mob-nav-btn{
         position: fixed;
+        display: flex;
         top: 7vw;
         z-index: 1000;
         right: 18vw;
@@ -2476,11 +2480,22 @@ color: #EE233C;
       .line-3 {
         transform: translateY(20px);
       }
+      #mob-nav-btn{
+        position: fixed;
+        display: flex;
+        top: 7vw;
+        z-index: 1000;
+        right: 18vw;
+        width: fit-content;
+    }
       /* home */
     #home-tri1 {
         width: 25vw;
         top: 45vw;
         left: 3vw;
+    }
+    #navbar .nav-button{
+        display: none;
     }
     .s1,.s2 {
         background-position: center;
