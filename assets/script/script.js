@@ -170,6 +170,7 @@ $('.our-top').owlCarousel({
     responsive:{
       0:{
           items:2,
+          margin:0
       },
       600:{
           items:2,
@@ -194,7 +195,7 @@ $('.our-top').owlCarousel({
     responsiveClass:true,
     responsive:{
       0:{
-          items:1,
+          items:2,
       },
       600:{
           items:2,
