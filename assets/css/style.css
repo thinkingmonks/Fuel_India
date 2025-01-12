@@ -923,12 +923,12 @@ ul li:hover::after{
 
 .looptext1 {
 font-family: 'fH';
-animation: textLoop 25s linear infinite;
+animation: textLoop 26s linear infinite;
 display: flex;
 }
 .looptext2 {
     display: flex;
-    animation: textLoop2 25s linear infinite;
+    animation: textLoop2 27s linear infinite;
 }
 
 
