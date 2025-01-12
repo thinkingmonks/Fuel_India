@@ -31,7 +31,7 @@
    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e4891421b6.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=1.1">
 </head>
 <body>
     <div id="loader">
@@ -47,6 +47,11 @@
         </div>
     </div>
     <img src="assets/images/fuel-India.png" alt="" class="mob-logo">
+    <div class="nav-button" id="mob-nav-btn">
+        <a href="mailto:info@fuelindia.co.in">
+        <div class="nav-btn-in">GET IN TOUCH</div>
+    </a>
+    </div> 
     <nav id="navbar">
         <div class="navbar-container">
         <img src="assets/images/fuel-India.png" alt="Fuel-India" class="company-logo">
@@ -63,7 +68,7 @@
             <a href="#team" onclick="scrollToSection(event,'#team')">
                 <li>OUR TEAM</li>
             </a>
-            <a href="#collab" onclick="scrollToSection(event,'#collab')">
+            <a href="#careers" onclick="scrollToSection(event,'#careers')">
                 <li>CONTACT</li>
             </a>
         </ul>
@@ -89,53 +94,66 @@
             </h1>
             <!-- <div class="home-des">
                 As a leading event management company in Bangalore, we specialize in designing, executing, and delivering exceptional events that leave a lasting impact, whether it's an intimate one-on-one meeting or a grand celebration attracting thousands. From high-energy conferences and product launches to sophisticated gala dinners and team-building retreats, we design each event to align with your brand’s vision and goals.
-            </div> -->
+            </div> --> <a href="mailto:info@fuelindia.co.in">
             <div class="home-btn" data-aos="fade-down" data-aos-delay="200">
-                <a href="#collab" onclick="scrollToSection(event,'#collab')">
                 <div class="home-in-btn">REACH OUT TO US!</div>
-            </a>
             </div>
+        </a>
         </div>
         
-        <img src="assets/images/home-tri1.svg" alt="" id="home-tri1">
-        <img src="assets/images/home-tri2.svg" alt="" id="home-tri2">
+        <!-- <img src="assets/images/home-tri1.svg" alt="" id="home-tri1">
+        <img src="assets/images/home-tri2.svg" alt="" id="home-tri2"> -->
         <div class="home-boxes">
-            <div class="home-box hb1" data-aos="fade-right">
+            <div class="home-box hb1" id="home-image1" data-aos="fade-right">
+                <div class="h-box-patch"></div>
                 <div class="hb-cont h-img1 parallax">
                     
-                    <h3 class="h-head"><span>Indian Music</span> <br>
-                        <span>Experience</span></h3>
+                    <h3 class="h-head">
+                        <span class="hspan1">Indian Music</span> <br>
+                        <span class="hspan2">Experience</span></h3>
                 </div>
             </div>
-            <div class="home-box hb2" data-aos="fade-right">
+            <div class="home-box hb2" id="home-image2" data-aos="fade-right">
+                <div class="h-box-patch"></div>
                 <div class="hb-cont h-img2 parallax">
-                    <h3 class="h-head"><span>Ravi Shankar</span> <br>
-                        <span>@100</span></h3>
+                    <h3 class="h-head"><span class="hspan1">Ravi Shankar</span> <br>
+                        <span class="hspan2">@100</span></h3>
                 </div>
             </div>
-            <div class="home-box hb2" data-aos="fade-right">
+            <div class="home-box hb2" id="home-image3" data-aos="fade-right">
+                <div class="h-box-patch"></div>
                 <div class="hb-cont h-img3 parallax">
-                    <h3 class="h-head"><span>Brigade</span> <br>
-                        <span>Showcase</span></h3>
+                    <h3 class="h-head"><span class="hspan1">Brigade</span> <br>
+                        <span class="hspan2">Showcase</span></h3>
                 </div>
             </div>
-            <div class="home-box hb1" data-aos="fade-right">
+            <div class="home-box hb1" id="home-image4" data-aos="fade-right">
+                <div class="h-box-patch"></div>
                 <div class="hb-cont h-img4 parallax">
                     
-                    <h3 class="h-head"><span>BANGALORE</span> <br> <span>DESIGN WEEK</span></h3>
+                    <h3 class="h-head"><span class="hspan1">BANGALORE</span> <br> <span class="hspan2">DESIGN WEEK</span></h3>
                 </div>
             </div>
-            <div class="home-box hb3" data-aos="fade-right">
+            <div class="home-box hb3" id="home-image5" data-aos="fade-right">
+                <div class="h-box-patch"></div>
                 <div class="hb-cont h-img5 parallax">
                     
-                    <h3 class="h-head">Career Utsav</h3>
+                    <h3 class="h-head"><span>Career Utsav</span></h3>
                 </div>
             </div>
         </div>
         <div class="home-patch"></div>
         <div class="home-bot-patch"></div>
     </div>
-   
+   <!-- Popup Modal -->
+   <div id="popup" class="popup">
+    <span class="close">&times;</span>
+    <img class="popup-content" id="popup-img">
+    <div class="popup-nav">
+        <button class="prev"><img src="assets/images/left-arrow.svg" alt=""></button>
+        <button class="next"><img src="assets/images/left-arrow.svg" alt=""></button>
+    </div>
+</div>
     <div id="overview">
         <!-- <img src="assets/images/bg-tri.svg" alt="" class="bg-tri1">
         <img src="assets/images/bg-tri.svg" alt="" class="bg-tri2"> -->
@@ -155,11 +173,11 @@
                         based in Bangalore, India. With over 15 years of expertise, we have mastered the art of designing 
                         events that blend professionalism with creativity. Our experienced team is dedicated to planning, 
                         organizing, and executing events that leave a lasting impact.</p>
-                    <p data-aos="fade-left" data-aos-delay="100">At Fuel India, we take pride in creating unforgettable experiences that matter. As one of Bangalore’s 
+                    <!---- <p data-aos="fade-left" data-aos-delay="100">At Fuel India, we take pride in creating unforgettable experiences that matter. As one of Bangalore’s 
                         leading event management companies, we specialize in crafting events that exceed 
                         expectations—whether it’s a corporate function, team-building activity, or a grand celebration. Our 
                         meticulous planning and attention to detail ensure every event is customized to suit the client’s unique 
-                        vision, budget, and goals</p>
+                        vision, budget, and goals</p> ---->
                     <!-- <p>With a team committed to precision, creativity, and seamless execution, we combine strategic insight 
                        with innovative concepts to turn your vision into reality. From intimate meetings to large-scale events 
                        like Career Utsav, we go beyond logistics to deliver experiences that connect, inspire, and celebrate.</p> -->
@@ -174,7 +192,7 @@
     </div>
     <div id="numbers">
         <div class="numbers-container">
-            <div class="num-head title" data-aos="fade-down">FUEL INDIA IN NUMBERS</div>
+            <!-- <div class="num-head title" data-aos="fade-down">FUEL INDIA IN NUMBERS</div> -->
             <div class="numbers-boxes">
             <div class="num-box" data-aos="fade-down" data-aos-delay="">
                 <div class="num-left">
@@ -316,11 +334,18 @@
                     <div class="s-right">
                         <div class="s-nor">
                         <div class="s-des">
-                            Corporate events are essential for connecting people, engaging teams, and 
-                            creating memorable experiences. We excel in delivering outstanding events,
-                             having executed remarkable experiences for leading brands both in India and abroad.
-                              Our attention to detail and commitment to excellence ensures every event leaves a lasting 
-                              impression.</div>
+                            <ul>
+                                <li>Launch Events</li>
+                                <li>Employee Engagement Programs</li>
+                                <li>Annual Day / Family Day Celebrations</li>
+                                <li>Team Outing Activities</li>
+                            </ul>   
+                            <ul>
+                                <li>Recognition & Reward (RNR) Events</li>
+                                <li>MICE (Meetings, Incentives, Conferences, & Exhibitions)</li>
+                                <li>PR Activities (Press Releases / Press Conferences)</li>
+                            </ul>
+                        </div>
                               </div>
                               <div class="s-hov">
                         <div class="s-points">
@@ -349,7 +374,17 @@
                     <div class="s-right">
                         <div class="s-nor">
                         <div class="s-des">
-                            We transform exhibition spaces into engaging experiences that capture attention and leave lasting impressions. From designing custom exhibition stands to creating interactive displays, we focus on every detail to maximize your brand’s visibility. Our experienced team will guide you from concept to completion, ensuring your brand stands out amidst the competition.
+                            <ul>
+                                <li>Launch Events</li>
+                                <li>Employee Engagement Programs</li>
+                                <li>Annual Day / Family Day Celebrations</li>
+                                <li>Team Outing Activities</li>
+                            </ul>   
+                            <ul>
+                                <li>Recognition & Reward (RNR) Events</li>
+                                <li>MICE (Meetings, Incentives, Conferences, & Exhibitions)</li>
+                                <li>PR Activities (Press Releases / Press Conferences)</li>
+                            </ul>
                         </div>
                         </div>
                         <div class="s-hov">
@@ -379,7 +414,17 @@
                     <div class="s-right">
                         <div class="s-nor">
                         <div class="s-des">
-                            We believe that impactful advertising and branding should captivate audiences and inspire meaningful engagement. Our goal is to seamlessly integrate with your brand, crafting a strong identity and showcasing it to the world with creativity and precision.From visual identity design to brand positioning, our services are tailored to align with your goals.
+                            <ul>
+                                <li>Launch Events</li>
+                                <li>Employee Engagement Programs</li>
+                                <li>Annual Day / Family Day Celebrations</li>
+                                <li>Team Outing Activities</li>
+                            </ul>   
+                            <ul>
+                                <li>Recognition & Reward (RNR) Events</li>
+                                <li>MICE (Meetings, Incentives, Conferences, & Exhibitions)</li>
+                                <li>PR Activities (Press Releases / Press Conferences)</li>
+                            </ul>
                         </div>
                         </div>
                         <div class="s-hov">
@@ -409,7 +454,17 @@
                     <div class="s-right">
                         <div class="s-nor">
                         <div class="s-des">
-                            In today’s digital era, virtual events are vital for fostering meaningful engagement. We specialize in hosting webinars, live-streamed conferences, virtual expos, and more. From managing technical complexities to ensuring seamless execution, we handle every detail, allowing you to focus on sharing your message with a global audience effortlessly.
+                            <ul>
+                                <li>Launch Events</li>
+                                <li>Employee Engagement Programs</li>
+                                <li>Annual Day / Family Day Celebrations</li>
+                                <li>Team Outing Activities</li>
+                            </ul>   
+                            <ul>
+                                <li>Recognition & Reward (RNR) Events</li>
+                                <li>MICE (Meetings, Incentives, Conferences, & Exhibitions)</li>
+                                <li>PR Activities (Press Releases / Press Conferences)</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="s-hov">
@@ -458,32 +513,62 @@
             <div class="title team-head" data-aos="fade-down"><span>OUR TEAM <img src="assets/images/tri-2.svg" class="sTri" alt=""></span> </div>
             <div class="team-boxes">
             <div class="team-box" data-aos="fade-up" data-aos-delay="50">
-                <div class="t-img"><img src="assets/images/team/test1.jpg" alt=""></div>
+                
+                <div class="t-img">
+                    <div class="team-patch">
+                    <div class="team-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non itaque ipsum dolorem optio vitae similique</div>
+                </div>
+                    <img src="assets/images/team/test1.jpg" alt=""></div>
                 <div class="t-name">James Wilson</div>
                 <div class="t-job">Chief Executive Officer</div>
             </div>
             <div class="team-box" data-aos="fade-up" data-aos-delay="100">
-                <div class="t-img"><img src="assets/images/team/test3.jpg" alt=""></div>
+                
+                <div class="t-img">
+                    <div class="team-patch">
+                    <div class="team-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non itaque ipsum dolorem optio vitae similique</div>
+                </div>
+                    <img src="assets/images/team/test3.jpg" alt=""></div>
                 <div class="t-name">James Wilson</div>
                 <div class="t-job">Chief Executive Officer</div>
             </div>
             <div class="team-box" data-aos="fade-up" data-aos-delay="150">
-                <div class="t-img"><img src="assets/images/team/test4.jpg" alt=""></div>
+                
+                <div class="t-img">
+                    <div class="team-patch">
+                    <div class="team-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non itaque ipsum dolorem optio vitae similique</div>
+                </div>
+                    <img src="assets/images/team/test4.jpg" alt=""></div>
                 <div class="t-name">James Wilson</div>
                 <div class="t-job">Chief Executive Officer</div>
             </div>
             <div class="team-box" data-aos="fade-up" data-aos-delay="50">
-                <div class="t-img"><img src="assets/images/team/test5.jpg" alt=""></div>
+                
+                <div class="t-img">
+                    <div class="team-patch">
+                    <div class="team-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non itaque ipsum dolorem optio vitae similique</div>
+                </div>
+                    <img src="assets/images/team/test5.jpg" alt=""></div>
                 <div class="t-name">James Wilson</div>
                 <div class="t-job">Chief Executive Officer</div>
             </div>
             <div class="team-box" data-aos="fade-up" data-aos-delay="100">
-                <div class="t-img"><img src="assets/images/team/test6.jpg" alt=""></div>
+                
+                <div class="t-img">
+                    <div class="team-patch">
+                    <div class="team-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non itaque ipsum dolorem optio vitae similique</div>
+                </div>
+                    <img src="assets/images/team/test6.jpg" alt=""></div>
                 <div class="t-name">James Wilson</div>
                 <div class="t-job">Chief Executive Officer</div>
             </div>
             <div class="team-box" data-aos="fade-up" data-aos-delay="150">
-                <div class="t-img"><img src="assets/images/team/test7.jpg" alt=""></div>
+                
+                <div class="t-img">
+                    <div class="team-patch">
+                    <div class="team-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non itaque ipsum dolorem optio vitae similique</div>
+                </div>
+                    <img src="assets/images/team/test7.jpg" alt=""></div>
                 <div class="t-name">James Wilson</div>
                 <div class="t-job">Chief Executive Officer</div>
             </div>
@@ -497,65 +582,69 @@
     <div id="our-clients">
         <div class="our-container">
             <h2 class="our-head title" data-aos="fade-down"><span>OUR CLIENTS <img src="assets/images/tri-2.svg" class="sTri" alt=""></span> </h2>
-            <div class="our-boxes" >
-                <div class="our-top  owl-carousel" data-aos="fade-right">
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/Accion Labs.png" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/address health.jpg" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/ADI - ASSOCATION OF DESIGNERS INDIA.png" style="width: 45%" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/allen career institute.avif" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/alliance university.jpg" style="width: 50%;" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/Anarock-1024x427.png" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/Anchor by panasonic.png" style="width: 60%;" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/asha swewets.png" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/Ashok_Leyland-Logo.wine.png" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/aster.png" style="width: 45%"alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/AZZETS.png" style="width: 50%" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/Biocon-removebg-preview (1).png" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/bisleri.jpg" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/Brigade-removebg-preview.png" style="width: 45%" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/brindhavan group.jpeg" style="width: 40%" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/british biologicals.avif" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/Broadcom.png" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/career utsav.png" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/citrix-logo.png" style="width: 50%;" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/coco cola.png" style="width: 50%;" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/collins-aerospace.png" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/dq labs.jpeg" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/edelman.png" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/FLOW .png" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/Fluke_Corporation_logo.svg.png" alt=""></div></div>
-
-                </div>
-                  <div class="our-bot owl-carousel" data-aos="fade-left">
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/gokaldas exports ltd.png" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/INDIA MUSIC EXPERIENCE - IME.png" style="width: 45%" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/indian oil.png" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/kcp.png" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/kirloskar.jpg" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/law asia.png" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/logo_Ather_Energy.jpg" style="width: 45%" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/LTI MINDTREE.png" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/Maruti Suzuki Arena.png" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/medical mentors.jpeg" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/mt educare.png" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/MVJCE_.png" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/Nexa-removebg-preview.png" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/nikon-removebg-preview.png" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/ola-removebg-preview.png" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/oyo_rooms-removebg-preview.png" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/portea.png" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/Pratt_&_Whitney_Logo.jpg" style="width: 40%;" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/presidency uni.png" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/reva-uni.jpg" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/SHOBA.png" style="width: 30%;" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/shriramproperties.jpg" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/withum.png" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/world at work.png" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/yahoo.png" alt=""></div></div>
-                    <div class="item"><div class="our-logo"><img src="assets/images/logo/zensar.png" alt=""></div></div>
-                </div>
+            <div class="our-boxes" > 
+                <div class="loop-holder holder1">
+                    <div class="loop-holder__text looptext1">
+                        <div class="our-logo"><img src="assets/images/logo/Accion Labs.png" alt=""></div>
+                        <div class="our-logo"><img src="assets/images/logo/address health.jpg" alt=""></div>
+                        <div class="our-logo"><img src="assets/images/logo/ADI - ASSOCATION OF DESIGNERS INDIA.png" style="width: 45%" alt=""></div>
+                        <div class="our-logo"><img src="assets/images/logo/allen career institute.avif" style="width: 45%;" alt=""></div>
+                        <div class="our-logo"><img src="assets/images/logo/alliance university.jpg" style="width: 45%;" alt=""></div>
+                        <div class="our-logo"><img src="assets/images/logo/Anarock-1024x427.png" alt="" style="width: 100%;"></div>
+                        <div class="our-logo"><img src="assets/images/logo/Anchor by panasonic.png" style="width: 65%;" alt=""></div>
+                        <div class="our-logo"><img src="assets/images/logo/asha swewets.png" alt="" ></div>
+                        <div class="our-logo"><img src="assets/images/logo/Ashok_Leyland-Logo.wine.png" alt="" style="width: 70%;"></div>
+                        <div class="our-logo"><img src="assets/images/logo/aster.png" style="width: 45%"alt=""></div>
+                        <div class="our-logo"><img src="assets/images/logo/AZZETS.png" style="width: 50%" alt=""></div>
+                        <div class="our-logo"><img src="assets/images/logo/Biocon-removebg-preview (1).png" alt=""></div>
+                        <div class="our-logo"><img src="assets/images/logo/bisleri.jpg" alt="" style="width: 50%;"></div>
+                        <div class="our-logo"><img src="assets/images/logo/Brigade-removebg-preview.png" style="width: 45%" alt=""></div>
+                        <div class="our-logo"><img src="assets/images/logo/brindhavan group.jpeg" style="width: 40%" alt=""></div>
+                        <div class="our-logo"><img src="assets/images/logo/british biologicals.avif" alt=""></div>
+                        <div class="our-logo"><img src="assets/images/logo/Broadcom.png" alt=""></div>
+                        <div class="our-logo"><img src="assets/images/logo/career utsav.png" alt=""></div>
+                        <div class="our-logo"><img src="assets/images/logo/citrix-logo.png" style="width: 50%;" alt=""></div>
+                        <div class="our-logo"><img src="assets/images/logo/coco_cola.png" style="width: 50%;" alt=""></div>
+                        <div class="our-logo"><img src="assets/images/logo/collins-aerospace.png" alt=""></div>
+                        <div class="our-logo"><img src="assets/images/logo/dq labs.jpeg" alt=""></div>
+                        <div class="our-logo"><img src="assets/images/logo/edelman.png" alt=""></div>
+                        <div class="our-logo"><img src="assets/images/logo/FLOW .png" alt=""></div>
+                        <div class="our-logo"><img src="assets/images/logo/Fluke_Corporation_logo.svg.png" alt=""></div>
+                    <div class="our-logo"><img src="assets/images/logo/zensar.png" alt=""></div>
+                    </div>
+                  </div>
+                  <div class="loop-holder holder2">
+                    <div class="loop-holder__text looptext2">
+                    <div class="our-logo"><img src="assets/images/logo/Accion Labs.png" alt=""></div>
+                    <div class="our-logo"><img src="assets/images/logo/gokaldas exports ltd.png" alt=""></div>
+                    <div class="our-logo"><img src="assets/images/logo/INDIA MUSIC EXPERIENCE - IME.png" style="width: 45%" alt=""></div>
+                    <div class="our-logo"><img src="assets/images/logo/indian oil.png" alt=""></div>
+                    <div class="our-logo"><img src="assets/images/logo/kcp.png" alt=""></div>
+                    <div class="our-logo"><img src="assets/images/logo/kirloskar.jpg" style="width: 45%" alt=""></div>
+                    <div class="our-logo"><img src="assets/images/logo/law asia.png" alt=""></div>
+                    <div class="our-logo"><img src="assets/images/logo/logo_Ather_Energy.jpg" style="width: 40%" alt=""></div>
+                    <div class="our-logo"><img src="assets/images/logo/LTI MINDTREE.png" alt=""></div>
+                    <div class="our-logo"><img src="assets/images/logo/Maruti_Suzuki.png" alt=""></div>
+                    <div class="our-logo"><img src="assets/images/logo/medical mentors.jpeg" style="width: 45%;" alt=""></div>
+                    <div class="our-logo"><img src="assets/images/logo/mt educare.png" alt=""></div>
+                    <div class="our-logo"><img src="assets/images/logo/MVJCE_.png" alt=""></div>
+                    <div class="our-logo"><img src="assets/images/logo/Nexa-removebg-preview.png" alt=""></div>
+                    <div class="our-logo"><img src="assets/images/logo/nikon-removebg-preview.png" alt=""></div>
+                    <div class="our-logo"><img src="assets/images/logo/ola-removebg-preview.png" alt=""></div>
+                    <div class="our-logo"><img src="assets/images/logo/oyo_rooms-removebg-preview.png" alt=""></div>
+                    <div class="our-logo"><img src="assets/images/logo/portea.png" alt=""></div>
+                    <div class="our-logo"><img src="assets/images/logo/Pratt_&_Whitney_Logo.jpg" style="width: 40%;" alt=""></div>
+                    <div class="our-logo"><img src="assets/images/logo/presidency uni.png" alt=""></div>
+                    <div class="our-logo"><img src="assets/images/logo/reva-uni.jpg" alt=""></div>
+                    <div class="our-logo"><img src="assets/images/logo/SHOBA.png" style="width: 30%;" alt=""></div>
+                    <div class="our-logo"><img src="assets/images/logo/shriramproperties.jpg" alt=""></div>
+                    <div class="our-logo"><img src="assets/images/logo/withum.png" alt=""></div>
+                    <div class="our-logo"><img src="assets/images/logo/world at work.png" alt=""></div>
+                    <div class="our-logo"><img src="assets/images/logo/yahoo.png" alt=""></div>
+                  </div>
             </div>
         </div>
+    </div>
     </div>
     <div id="testimonial">
         <div class="test-container">
@@ -636,12 +725,21 @@
                 <div class="high-head title">RELIEVE THE  <br><span> HIGHLIGHTS! <img src="assets/images/tri-2.svg" class="sTri" alt=""></span></div>
                 <div class="high-vid-cont">
                      <div class="vid-btn"><i class="fa-solid fa-play"></i></div>
-                <video src="assets/video/who.mp4" id="high-vid" loop autoplay></video>
+                <video src="assets/video/who.mp4" id="high-vid" muted loop autoplay></video>
                 </div>
                
             </div>
             <div id="gallery" data-aos="fade-right">
-                    <div class="gallery-boxes owl-carousel">
+                <div class="filter-names">
+                    <div data-filter="1" class="filter-name filter-active" >ALL</div>
+                    <div data-filter="2" class="filter-name">CORPORATE</div>
+                    <div data-filter="3" class="filter-name">ACTIVATIONS</div>
+                    <div data-filter="4" class="filter-name">EXHIBITION</div>
+                    <div data-filter="5" class="filter-name">SPECIAL PROJECTS</div>
+                    <div data-filter="6" class="filter-name">VIRTUAL</div>
+                </div>
+                <div class="gallery-container">
+                    <div class="gallery-boxes  owl-carousel" style="display: flex;" data-box="1">
                         <div class="item">
                         <div class="gallery-box">
                             <img src="assets/images/gallery/gal1.png" alt="" class="gal-img">
@@ -693,6 +791,252 @@
                         </div>
                         </div>
                     </div>
+                    <div class="gallery-boxes  owl-carousel" data-box="2" style="display: none;">
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal1.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal1.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal1.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal1.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal1.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal1.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal2.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal3.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal4.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal5.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="gallery-boxes  owl-carousel" data-box="3" style="display: none;">
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal2.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal2.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal2.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal2.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal2.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal2.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal2.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="gallery-boxes  owl-carousel" data-box="4" style="display: none;">
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal1.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal2.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal3.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal4.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal5.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal1.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal2.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal3.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal4.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal5.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="gallery-boxes  owl-carousel" data-box="5" style="display: none;">
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal1.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal2.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal3.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal4.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal5.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal1.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal2.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal3.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal4.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal5.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="gallery-boxes  owl-carousel" data-box="6" style="display: none;">
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal1.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal2.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal3.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal4.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal5.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal1.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal2.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal3.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal4.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                        <div class="item">
+                        <div class="gallery-box">
+                            <img src="assets/images/gallery/gal5.png" alt="" class="gal-img">
+                        </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="tagline" data-aos="fade-left">
                 <div class="tagline"><span>Fuel</span> success with <br>
@@ -806,8 +1150,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <script>
-        AOS.init({duration:500});
+        AOS.init({duration:1000});
       </script>
-    <script src="assets/script/script.js"></script>
+    <script src="assets/script/script.js?v=1.1"></script>
 </body>
 </html>

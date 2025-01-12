@@ -98,88 +98,162 @@ menuIcon.addEventListener("click", toggleMenu);
   });
 
 
+// OUR WORKS POPUP
 
-// OUR CLIENTS CAROUSEL //
+document.addEventListener("DOMContentLoaded", function () {
+    const popup = document.getElementById("popup");
+    const popupImg = document.getElementById("popup-img");
+    const closeBtn = document.querySelector(".popup .close");
+    const prevBtn = document.querySelector(".popup-nav .prev");
+    const nextBtn = document.querySelector(".popup-nav .next");
 
-$('.our-top').owlCarousel({
-    items:4,
-    loop:true,
-    margin:20,
-    autoplay: true,
-    nav: false,
-    dots: false,
-    slideBy:1,
-    smartSpeed:800,
-    autoplayTimeout: 3000,
-    rtl:true,
-    responsiveClass:true,
-    responsive:{
-      0:{
-          items:3,
-      },
-      600:{
-          items:3,
-          nav:false
-      },
-      1000:{
-          items:6,
+    let imageIndex = 0;
+    let imagePaths = [];
+
+    // Helper function to load images
+    function loadImages(folderPath, callback) {
+        // Simulate loading images by defining them manually (server logic needed for dynamic loading)
+        if (folderPath === "assets/images/ourWorks/ime") {
+            imagePaths = [
+                folderPath + "/ime1.webp",
+                folderPath + "/ime2.webp",
+                folderPath + "/ime3.webp",
+                folderPath + "/ime4.webp",
+            ];
+        } else if (folderPath === "assets/images/ourWorks/bs") {
+            imagePaths = [
+                folderPath + "/bs1.webp",
+                folderPath + "/bs2.webp",
+                folderPath + "/bs3.webp",
+                folderPath + "/bs4.webp",
+                folderPath + "/bs5.webp",
+            ];
+        } else if (folderPath === "assets/images/ourWorks/bdf") {
+          imagePaths = [
+              folderPath + "/bdf1.webp",
+              folderPath + "/bdf2.webp",
+              folderPath + "/bdf3.webp",
+              folderPath + "/bdf4.webp",
+              folderPath + "/bdf5.webp",
+          ];
       }
+        callback();
+    }
+
+    function openPopup(folderPath) {
+      loadImages(folderPath, function () {
+          imageIndex = 0;
+          popupImg.src = imagePaths[imageIndex];
+          popup.style.zIndex = 200;
+          popup.style.opacity = 1;
+      });
   }
-  })
-
-  $('.our-bot').owlCarousel({
-    items:4,
-    loop:true,
-    margin:20,
-    autoplay: true,
-    nav: false,
-    dots: false,
-    slideBy:1,
-    smartSpeed:800,
-    autoplayTimeout: 3000,
-    rtl:false,
-    responsiveClass:true,
-    responsive:{
-      0:{
-          items:3,
-      },
-      600:{
-          items:3,
-          nav:false
-      },
-      1000:{
-          items:6,
-      }
-  }
-  })
 
 
+    // Event listeners for home images
+    document.getElementById("home-image1").addEventListener("click", function () {
+        openPopup("assets/images/ourWorks/ime");
+    });
 
-  $('.gallery-boxes').owlCarousel({
-    items:3,
-    loop:true,
-    margin:20,
-    autoplay: true,
-    nav: true,
-    dots: false,
-    slideBy:1,
-    smartSpeed:800,
-    autoplayTimeout: 3000,
-    rtl:false,
-    responsiveClass:true,
-    responsive:{
-      0:{
-          items:2,
-      },
-      600:{
-          items:2,
-          nav:false
-      },
-      1000:{
-          items:3,
-      }
-  }
+    document.getElementById("home-image3").addEventListener("click", function () {
+        openPopup("assets/images/ourWorks/bs");
+    });
+
+    document.getElementById("home-image4").addEventListener("click", function () {
+      openPopup("assets/images/ourWorks/bdf");
   });
+
+  function closePopup() {
+    popup.style.opacity = 0;
+    setTimeout(() => {
+        popup.style.zIndex = -1;
+    }, 500); // Matches the CSS transition duration
+}
+closeBtn.addEventListener("click", closePopup);
+    // Navigate images
+    prevBtn.addEventListener("click", function () {
+        imageIndex = (imageIndex - 1 + imagePaths.length) % imagePaths.length;
+        popupImg.src = imagePaths[imageIndex];
+    });
+
+    nextBtn.addEventListener("click", function () {
+        imageIndex = (imageIndex + 1) % imagePaths.length;
+        popupImg.src = imagePaths[imageIndex];
+    });
+});
+
+ // OUR CLIENTS CAROUSEL //
+
+
+ document.addEventListener('DOMContentLoaded', function () {
+
+  const filterNames = document.querySelectorAll('.filter-name');
+
+  filterNames.forEach(filter => {
+      filter.addEventListener('click', function () {
+          // Remove 'filter-active' class from all filters
+          filterNames.forEach(f => f.classList.remove('filter-active'));
+
+          // Add 'filter-active' class to the clicked filter
+          this.classList.add('filter-active');
+      });
+  });
+
+  const filterButtons = document.querySelectorAll('.filter-name');
+  const galleryBoxes = document.querySelectorAll('.gallery-boxes');
+
+  // Initialize all carousels
+  $('.gallery-boxes').owlCarousel({
+      items: 3,
+      loop: true,
+      margin: 20,
+      autoplay: true,
+      nav: true,
+      dots: false,
+      slideBy: 1,
+      smartSpeed: 800,
+      autoplayTimeout: 3000,
+      rtl: false,
+      responsiveClass: true,
+      responsive: {
+          0: {
+              items: 2,
+              margin: 0,
+          },
+          600: {
+              items: 2,
+              nav: false,
+          },
+          1000: {
+              items: 3,
+          },
+      },
+  });
+
+  // Filter functionality
+  filterButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+          const filter = button.getAttribute('data-filter');
+
+          // Hide all gallery sections
+          galleryBoxes.forEach((box) => {
+              box.style.display = 'none'; // Hide all carousels
+          });
+
+          // Show the selected gallery section
+          const selectedBox = document.querySelector(`.gallery-boxes[data-box="${filter}"]`);
+          if (selectedBox) {
+              selectedBox.style.display = 'flex';
+
+              // Refresh carousel after showing it
+              $(selectedBox).trigger('refresh.owl.carousel');
+          }
+      });
+  });
+});
+
+
+
   $('.test-boxes').owlCarousel({
     items:3,
     loop:true,
@@ -194,7 +268,7 @@ $('.our-top').owlCarousel({
     responsiveClass:true,
     responsive:{
       0:{
-          items:1,
+          items:2,
       },
       600:{
           items:2,
