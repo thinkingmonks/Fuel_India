@@ -108,8 +108,9 @@ h1,h2,h3,h4,h5,h6{
     transition: all ease .4s  ;
 }
 .navbar-scrolled{
-  background: linear-gradient(to bottom,#001010cb 0%,#00000000 100%);
-  height: 6vw ;
+  background-color: #00101082;
+  backdrop-filter: blur(2px);
+  height: 7vw !important;
 }
 .navbar-container{
     width: 80%;
@@ -457,7 +458,7 @@ ul li:hover::after{
     display: flex;
     border-radius: 2vw;
     overflow: hidden;
-    border: 2px solid #852570;
+    border: 1.5px solid #852570;
     cursor: pointer;
 }
 .h-box-patch{
@@ -488,6 +489,7 @@ ul li:hover::after{
     display: flex;
     align-items: center;
     justify-content: start;
+    filter: grayscale(.8);
     transition: all ease-in-out .5s;
 }
 .hb-patch{ 
@@ -527,9 +529,9 @@ ul li:hover::after{
     text-align: start;
     font-family: 'fBold';
     line-height: 2.1vw;
-    margin-top: 10vw;
+    margin-top: 12vw;
     color: #fff;
-   
+    position: absolute;
     width: fit-content;
     text-transform: uppercase;
     z-index: 4;
@@ -556,6 +558,9 @@ ul li:hover::after{
 }
 .home-boxes .home-box:nth-child(4) .hspan2 {
     background: linear-gradient(to left, #C01E38 36%, #842170 150%);
+}
+.home-box:hover .hb-cont{
+    filter: none;
 }
 #home-tri1{
     position: absolute;
@@ -694,7 +699,7 @@ ul li:hover::after{
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
 }
 .video-container{
     width: 90%;
@@ -825,6 +830,7 @@ ul li:hover::after{
     display: flex;
     flex-wrap: wrap;
     gap: 2vw;
+    z-index: 1;
     align-items: center;
     justify-content: space-between;
 }
@@ -923,12 +929,12 @@ ul li:hover::after{
 
 .looptext1 {
 font-family: 'fH';
-animation: textLoop 25s linear infinite;
+animation: textLoop 26s linear infinite;
 display: flex;
 }
 .looptext2 {
     display: flex;
-    animation: textLoop2 25s linear infinite;
+    animation: textLoop2 27s linear infinite;
 }
 
 
@@ -971,7 +977,7 @@ display: flex;
     width: 120%;
     height: 12vw;
     rotate: 3deg;
-    top: -4vw;
+    top: -5vw;
     background-color: #EDEDEF;
 }
 .services-head .sTri{
@@ -979,7 +985,7 @@ display: flex;
     top: -3vw;
 }
 .services-head{
-    line-height: 4vw;
+    line-height: 5vw;
 }
 .services-container{
     width: 80%;
@@ -1203,7 +1209,7 @@ display: flex;
     z-index: 1;
 }
 .team-head{
-    font-size: 4vw;
+    font-size: 5vw;
     color: #FA1228;
     text-align: center;
 }
@@ -1227,9 +1233,9 @@ display: flex;
 .t-bot-patch{
     position: absolute;
     width: 120%;
-    height: 15vw;
+    height: 13vw;
     background-color: #000;
-    bottom: -9vw;
+    bottom: -7vw;
     rotate: -3deg;
 }
 .team-boxes{
@@ -1333,7 +1339,7 @@ display: flex;
     z-index: 3;
 }
 .our-head{
-    font-size: 4.5vw;
+    font-size: 5vw;
     text-align: center;
     font-weight: 800;
     font-family: 'fBold';
@@ -1501,7 +1507,7 @@ display: flex;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 4vw 0;
+    padding: 4vw 0 5vw;
     background-color: #EDEDEF;
 }
 .high-container{
@@ -1710,9 +1716,9 @@ display: flex;
 }
 .collab-patch{
     position: absolute;
-    top: -5vw;
+    top: -7vw;
     width: 110%;
-    height: 15vw;
+    height: 18vw;
     rotate: 3deg;
     background-color: #0A1321;
     z-index: 0;
