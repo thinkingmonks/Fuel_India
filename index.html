@@ -29,9 +29,11 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/e4891421b6.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="stylesheet" href="assets/css/style.css?v=1.1">
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.8.1/slick.css"/>
+   <script src="https://kit.fontawesome.com/e4891421b6.js" crossorigin="anonymous"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
+   <link rel="stylesheet" href="assets/css/style.css?v=1.1">
 </head>
 <body>
     <div id="loader">
@@ -59,6 +61,9 @@
             <a href="#home" onclick="scrollToSection(event,'#home')">
                 <li>HOME</li>
             </a>
+            <a href="#" onclick="scrollToSection(event,'#overview')">
+                <li>SPECIAL PROJECTS</li>
+            </a>
             <a href="#overview" onclick="scrollToSection(event,'#overview')">
                 <li>ABOUT US</li>
             </a>
@@ -67,6 +72,9 @@
             </a>
             <a href="#team" onclick="scrollToSection(event,'#team')">
                 <li>OUR TEAM</li>
+            </a>
+            <a href="#gallery" onclick="scrollToSection(event,'#team')">
+                <li>GALLERY</li>
             </a>
             <a href="#careers" onclick="scrollToSection(event,'#careers')">
                 <li>CONTACT</li>
@@ -104,45 +112,54 @@
         <!-- <img src="assets/images/home-tri1.svg" alt="" id="home-tri1">
         <img src="assets/images/home-tri2.svg" alt="" id="home-tri2"> -->
         <div class="home-boxes">
+            <div class="title" data-aos="fade-right">SPECIAL PROJECTS <img src="assets/images/tri-2.svg" class="sTri" alt=""></div>
             <div class="home-box hb1" id="home-image1" data-aos="fade-right">
-                <div class="h-box-patch"></div>
-                <div class="hb-cont h-img1 parallax">
-                    
-                    
+                <div class="h-box-patch">
+                    <div  class="home-arrow"></div>
                 </div>
-                <h3 class="h-head">
+                <div class="hb-cont h-img1 parallax"></div>
+                <h3 class="h-head hH1">
                     <span class="hspan1">Indian Music</span> <br>
-                    <span class="hspan2">Experience</span></h3>
+                    <span class="hspan2">Experience</span>
+                </h3>
             </div>
             <div class="home-box hb2" id="home-image2" data-aos="fade-right">
-                <div class="h-box-patch"></div>
+                <div class="h-box-patch">
+                    <div  class="home-arrow"></div>
+                </div>
                 <div class="hb-cont h-img2 parallax">
                   
                 </div>
-                <h3 class="h-head"><span class="hspan1">Ravi Shankar</span> <br>
+                <h3 class="h-head hH2"><span class="hspan1">Ravi Shankar</span> <br>
                     <span class="hspan2">@100</span></h3>
             </div>
             <div class="home-box hb2" id="home-image3" data-aos="fade-right">
-                <div class="h-box-patch"></div>
+                <div class="h-box-patch">
+                    <div  class="home-arrow"></div>
+                </div>
                 <div class="hb-cont h-img3 parallax">
                   
                 </div>
-                <h3 class="h-head"><span class="hspan1">Brigade</span> <br>
+                <h3 class="h-head hH3"><span class="hspan1">Brigade</span> <br>
                     <span class="hspan2">Showcase</span></h3>
             </div>
             <div class="home-box hb1" id="home-image4" data-aos="fade-right">
-                <div class="h-box-patch"></div>
+                <div class="h-box-patch">
+                    <div  class="home-arrow"></div>
+                </div>
                 <div class="hb-cont h-img4 parallax">
                     
                 </div>
-                <h3 class="h-head"><span class="hspan1">BANGALORE</span> <br> <span class="hspan2">DESIGN WEEK</span></h3>
+                <h3 class="h-head hH4"><span class="hspan1">BANGALORE</span> <br> <span class="hspan2">DESIGN WEEK</span></h3>
             </div>
             <div class="home-box hb3" id="home-image5" data-aos="fade-right">
-                <div class="h-box-patch"></div>
+                <div class="h-box-patch">
+                    <div  class="home-arrow"></div>
+                </div>
                 <div class="hb-cont h-img5 parallax">
                     
                 </div>
-                <h3 class="h-head"><span>Career Utsav</span></h3>
+                <h3 class="h-head hH5"><span>Career Utsav</span></h3>
             </div>
         </div>
         <div class="home-patch"></div>
@@ -151,7 +168,13 @@
    <!-- Popup Modal -->
    <div id="popup" class="popup">
     <span class="close">&times;</span>
-    <img class="popup-content" id="popup-img">
+    <div class="popup-content">
+        <img  id="popup-img" src="" alt="">
+        <div class="pop-up-patch">
+            <div class="h-head"></div>
+            <div class="pop-des"></div>
+        </div>
+    </div>
     <div class="popup-nav">
         <button class="prev"><img src="assets/images/left-arrow.svg" alt=""></button>
         <button class="next"><img src="assets/images/left-arrow.svg" alt=""></button>
@@ -727,7 +750,7 @@
             <div class="high-vid-container" data-aos="fade-right">
                 <div class="high-head title">RELIEVE THE  <br><span> HIGHLIGHTS! <img src="assets/images/tri-2.svg" class="sTri" alt=""></span></div>
                 <div class="high-vid-cont">
-                     <div class="vid-btn"><i class="fa-solid fa-play"></i></div>
+                     <div class="vid-btn"><img src="assets/images/arrow-play.svg" alt=""></div>
                 <video src="assets/video/who.mp4" id="high-vid" muted loop autoplay></video>
                 </div>
                
@@ -1138,7 +1161,7 @@
                         <img src="assets/images/logo2.webp" alt="" class="f-img" data-aos="fade-up" data-aos-delay="200">
                     </div>
                 </div>
-                <div class="copyright" data-aos="fade-up">Copyright © 2024 Fuel India. All Rights Reserved.</div>
+                <div class="copyright" data-aos="fade-up">Copyright © 2025 Fuel India. All Rights Reserved.</div>
             </div>
         </footer>
         <div class="foot-tag">
@@ -1147,14 +1170,15 @@
         </div>
 
 
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.8.1/slick.min.js"></script>
+    <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.8.1/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script>
         AOS.init({duration:1000});
-      </script>
+    </script>
     <script src="assets/script/script.js?v=1.1"></script>
 </body>
 </html>
