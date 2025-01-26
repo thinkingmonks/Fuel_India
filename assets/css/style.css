@@ -977,6 +977,7 @@ ul li:hover::after{
 .looptext1 {
 font-family: 'fH';
 animation: textLoop 26s linear infinite;
+animation: textLoop 26s linear infinite;
 display: flex;
 }
 .looptext2 {
