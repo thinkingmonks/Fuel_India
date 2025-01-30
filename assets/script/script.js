@@ -102,6 +102,7 @@ menuIcon.addEventListener("click", toggleMenu);
 
 document.addEventListener("DOMContentLoaded", function () {
     const popup = document.getElementById("popup");
+    const popupContent = document.querySelector(".popup-content")
     const popupImg = document.getElementById("popup-img");
     const closeBtn = document.querySelector(".popup .close");
     const prevBtn = document.querySelector(".popup-nav .prev");
@@ -170,6 +171,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 500); // Matches the CSS transition duration
 }
 closeBtn.addEventListener("click", closePopup);
+
+popup.addEventListener("click", function (e) {
+  if (!popupContent.contains(e.target)) {
+      closePopup();
+  }
+});
+prevBtn.addEventListener("click", function (e) {
+  e.stopPropagation();
+  // Navigate to the previous image
+});
+
+nextBtn.addEventListener("click", function (e) {
+  e.stopPropagation();
+  // Navigate to the next image
+});
     // Navigate images
     prevBtn.addEventListener("click", function () {
         imageIndex = (imageIndex - 1 + imagePaths.length) % imagePaths.length;
@@ -182,27 +198,55 @@ closeBtn.addEventListener("click", closePopup);
     });
 });
 
+///////////    overview popup section    /////////////// 
+document.addEventListener("DOMContentLoaded", function () {
+  const vidCont = document.querySelector(".vid-cont");
+  const popup = document.getElementById("over-popup");
+  const closeBtn = document.querySelector(".over-close-btn");
+  const iframe = document.getElementById("videoFrame");
+  const youtubeURL = "https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1"; // Replace with actual video ID
+
+  vidCont.addEventListener("click", function () {
+      iframe.src = youtubeURL;
+      popup.style.display = "flex";
+  });
+
+  closeBtn.addEventListener("click", function () {
+      closePopup();
+  });
+
+  window.addEventListener("click", function (e) {
+      if (e.target === popup) {
+          closePopup();
+      }
+  });
+
+  function closePopup() {
+      popup.style.display = "none";
+      iframe.src = ""; // Stop video playback
+  }
+});
 
 // Define content for each home-box
 const contentData = {
   "home-image1": {
-    head: "Indian Music Experience Museum",
+    head: "<span>Indian Music</span> <br/><span>Experience Museum</span> ",
     des: "The Indian Music Experience's grand launch was a landmark celebration, merging tradition with innovation. Highlighted by an extraordinary performance from Ustad Zakir Hussain's ensemble, in collaboration with Louiz Banks. This momentous occasion brought music enthusiasts together to experience the confluence of heritage and contemporary artistry."
   },
   "home-image2": {
-    head: "Ravi Shankar @100",
+    head: "<span>Ravi Shankar</span>  <br/><span>@100</span> ",
     des: "We took pride in honoring the centenary of the legendary Pandit Ravi Shankar with an immersive tribute. The event celebrated his unparalleled legacy through a thoughtfully curated exhibition, presenting iconic milestones from his journey. This celebration offered attendees an experiential dive into the life and music of one of India's most celebrated maestros."
   },
   "home-image3": {
-    head: "Brigade Showcase",
+    head: "<span>Brigade</span> <br/><span>Showcase</span> ",
     des: "For over seven years, we has played a pivotal role in conceptualizing and executing the Brigade Showcase in Bangalore. With a focus on creating engaging, experiential ideas that align with the brand's promise, the showcase has evolved into a standout platform for customers to experience the Brigade brand’s vision and offerings in an innovative way."
   },
   "home-image4": {
-    head: "Bangalore Design Week",
+    head: "<span>Bangalore</span> <br/><span>Design Week</span> ",
     des: "We played a key role in shaping Bangalore’s first-ever Design Week, a platform celebrating creativity and innovation. BDW serves as a vibrant hub for Indian and global designers to connect, collaborate, and exchange ideas. The event underscores Bangalore’s identity as a design-forward city, promoting dialogue within the design community."
   },
   "home-image5": {
-    head: "Career Utsav",
+    head: "<span>Career</span> <br/><span>Utsav</span> ",
     des: "Career Utsav, Bangalore's leading education fair, has become a beacon of guidance for students exploring diverse career paths. With workshops and seminars by industry experts, the event showcases both conventional and cutting-edge professions. Since its inception in 2013, it has inspired over half a million students from India and abroad, helping them navigate critical career decisions."
   },
   // Add more entries for other home-boxes (hb3, hb4, hb5)

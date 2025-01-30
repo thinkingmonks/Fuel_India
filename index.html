@@ -61,17 +61,17 @@
             <a href="#home" onclick="scrollToSection(event,'#home')">
                 <li>HOME</li>
             </a>
-            <a href="#special-projects" onclick="scrollToSection(event,'#special-projects')">
-                <li>SPECIAL PROJECTS</li>
-            </a>
             <a href="#overview" onclick="scrollToSection(event,'#overview')">
                 <li>ABOUT US</li>
             </a>
             <a href="#services" onclick="scrollToSection(event, '#services')">
-                <li> OUR SERVICES</li>
+                <li> SERVICES</li>
             </a>
             <a href="#team" onclick="scrollToSection(event,'#team')">
-                <li>OUR TEAM</li>
+                <li> TEAM</li>
+            </a>
+            <a href="#special-projects" onclick="scrollToSection(event,'#special-projects')">
+                <li>BESPOKE</li>
             </a>
             <a href="#gallery" onclick="scrollToSection(event,'#team')">
                 <li>GALLERY</li>
@@ -102,17 +102,20 @@
             </h1>
             <!-- <div class="home-des">
                 As a leading event management company in Bangalore, we specialize in designing, executing, and delivering exceptional events that leave a lasting impact, whether it's an intimate one-on-one meeting or a grand celebration attracting thousands. From high-energy conferences and product launches to sophisticated gala dinners and team-building retreats, we design each event to align with your brand’s vision and goals.
-            </div> --> <a href="mailto:info@fuelindia.co.in">
+            </div> --> 
             <div class="home-btn" data-aos="fade-down" data-aos-delay="200">
                 <div class="home-in-btn">REACH OUT TO US!</div>
+                <div class="btn-dropdown">
+                    <a  target="_blank" class="btn-mail"><i class="fa-regular fa-envelope"></i><span> From Mail</span></a>
+                    <a  target="_blank" class="btn-phone"><i class="fa-solid fa-phone"></i><span> From Mobile</span></a>
+                </div>
             </div>
-        </a>
         </div>
         
         <!-- <img src="assets/images/home-tri1.svg" alt="" id="home-tri1">
         <img src="assets/images/home-tri2.svg" alt="" id="home-tri2"> -->
         <div class="home-boxes" id="special-projects">
-            <div class="title" data-aos="fade-right">SPECIAL PROJECTS <img src="assets/images/tri-2.svg" class="sTri" alt=""></div>
+            <div class="title" data-aos="fade-right">BESPOKE PROJECTS<img src="assets/images/tri-2.svg" class="sTri" alt=""></div>
             <div class="home-box hb1" id="home-image1" data-aos="fade-right">
                 <div class="h-box-patch">
                     <div  class="home-arrow"></div>
@@ -185,25 +188,18 @@
         <img src="assets/images/bg-tri.svg" alt="" class="bg-tri2"> -->
         <div class="overview-container">
             <div class="over-left" >
-                <div class="video-container" data-aos="fade-right">
-                    <div class="vid-cont">
-                    <video src="assets/video/who.mp4" autoplay loop muted></video>
-                    <img src="assets/images/video-tri.svg" class="video-svg" alt="video-svg" class="v-play-btn">
-                </div>
+                    <div class="video-container" data-aos="fade-right">
+                        <div class="vid-cont">
+                        <video src="assets/video/who.mp4" autoplay loop muted></video>
+                        <img src="assets/images/video-tri.svg" class="video-svg" alt="video-svg" class="v-play-btn">
+                    </div>
             </div>
             </div>
             <div class="over-right">
                 <div class="over-head" data-aos="fade-left"><span>WHO <img src="assets/images/tri-2.svg" class="sTri" alt=""></span><br> WE ARE?</div>
                 <div class="over-des">
-                    <p data-aos="fade-left" data-aos-delay="50">Founded with a passion for exceptional events, Fuel India is a premier event management company 
-                        based in Bangalore, India. With over 15 years of expertise, we have mastered the art of designing 
-                        events that blend professionalism with creativity. Our experienced team is dedicated to planning, 
-                        organizing, and executing events that leave a lasting impact.</p>
-                    <!---- <p data-aos="fade-left" data-aos-delay="100">At Fuel India, we take pride in creating unforgettable experiences that matter. As one of Bangalore’s 
-                        leading event management companies, we specialize in crafting events that exceed 
-                        expectations—whether it’s a corporate function, team-building activity, or a grand celebration. Our 
-                        meticulous planning and attention to detail ensure every event is customized to suit the client’s unique 
-                        vision, budget, and goals</p> ---->
+                    <p data-aos="fade-left" data-aos-delay="50">At Fuel India, based in Bangalore, we have been redefining event management for over 15 years with a commitment to crafting unforgettable experiences. Our passion for innovation and excellence drives us to create events that strike the perfect balance between professionalism and creativity.</p>
+                    <p data-aos="fade-left" data-aos-delay="100">With a dedicated team of experts, we specialize in planning, organizing, and executing events that resonate with purpose and leave a lasting impression. Whether it’s an intimate gathering or a large-scale extravaganza like Career Utsav, we go beyond mere logistics to design experiences that inspire, connect, and celebrate life’s milestones.</p> 
                     <!-- <p>With a team committed to precision, creativity, and seamless execution, we combine strategic insight 
                        with innovative concepts to turn your vision into reality. From intimate meetings to large-scale events 
                        like Career Utsav, we go beyond logistics to deliver experiences that connect, inspire, and celebrate.</p> -->
@@ -215,6 +211,12 @@
                     </div>
             </div>
         </div>
+        <div class="over-popup-container" id="over-popup">
+            <div class="over-popup-content">
+                <span class="over-close-btn">&times;</span>
+                <iframe id="videoFrame" width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
     </div>
     <div id="numbers">
         <div class="numbers-container">
@@ -222,7 +224,7 @@
             <div class="numbers-boxes">
             <div class="num-box" data-aos="fade-down" data-aos-delay="">
                 <div class="num-left">
-                    <div class="num-num">40<span>+</span></div>
+                    <div class="num-num">60<span>+</span></div>
                     <div class="num-des">EXHIBITIONS</div>
                 </div>
                 <div class="num-right">
@@ -235,7 +237,7 @@
             </div>
             <div class="num-box" data-aos="fade-down" data-aos-delay="50">
                 <div class="num-left">
-                    <div class="num-num">450<span>+</span></div>
+                    <div class="num-num">1500<span>+</span></div>
                     <div class="num-des">CONFERENCES</div>
                 </div>
                 <div class="num-right">
@@ -248,8 +250,8 @@
             </div>
             <div class="num-box" data-aos="fade-down" data-aos-delay="100">
                 <div class="num-left">
-                    <div class="num-num">500<span>+</span></div>
-                    <div class="num-des">STALLS</div>
+                    <div class="num-num">1000<span>+</span></div>
+                    <div class="num-des">CORPORATE <br> EVENTS</div>
                 </div>
                 <div class="num-right">
                     <div class="num-svg">
@@ -261,9 +263,8 @@
             </div>
             <div class="num-box" data-aos="fade-down" data-aos-delay="150">
                 <div class="num-left">
-                    <div class="num-num">250<span>+</span></div>
-                    <div class="num-des">CORPORATE <br>
-                        EVENTS</div>
+                    <div class="num-num">30<span>+</span></div>
+                    <div class="num-des">SPECIAL <br> PROJECTS</div>
                 </div>
                 <div class="num-right">
                     <div class="num-svg">
@@ -275,9 +276,8 @@
                 </div>
             <div class="num-box" data-aos="fade-down" data-aos-delay="">
                 <div class="num-left">
-                    <div class="num-num">15<span>+</span></div>
-                    <div class="num-des">SPECIAL <br>
-                        PROJECTS</div>
+                    <div class="num-num">1500<span>+</span></div>
+                    <div class="num-des">ACTIVATION </div>
                 </div>
                 <div class="num-right">
                     <div class="num-svg">
@@ -289,8 +289,8 @@
             </div>
             <div class="num-box" data-aos="fade-down" data-aos-delay="50">
                 <div class="num-left">
-                    <div class="num-num">500<span>+</span></div>
-                    <div class="num-des">ACTIVATIONS</div>
+                    <div class="num-num">200<span>+</span></div>
+                    <div class="num-des">DESTINATION </div>
                 </div>
                 <div class="num-right">
                     <div class="num-svg">
@@ -300,32 +300,7 @@
                 </div>
                 </div>
             </div>
-            <div class="num-box" data-aos="fade-down" data-aos-delay="100">
-                <div class="num-left">
-                    <div class="num-num">50<span>+</span></div>
-                    <div class="num-des">SOCIAL <br> EVENTS</div>
-                </div>
-                <div class="num-right">
-                    <div class="num-svg">
-                        <img src="assets/images/num-tri1.svg" alt="" class="num-tri1">
-                        <img src="assets/images/num-tri2.svg" alt="" class="num-tri2">
-                    <svg class="num-icon" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 500 500" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths"><g><path fill-rule="evenodd" d="M452.387 184.791c-.815 8.56-1.404 17.753-2.009 27.53-2.351 37.307-5.241 83.279-21.618 108.657-9.336 14.484-21.078 23.198-33.564 32.452-7.652 5.676-15.568 11.549-23.539 19.064-9.959 9.386-16.829 19.311-21.513 29.677-4.657 10.305-7.118 20.979-8.285 31.94a12.368 12.368 0 0 1-4.013 7.889c-2.186 1.954-5.081 3.132-8.269 3.132h-73.045V390.87c0-19.295 10.085-27.949 23.572-39.52 2.455-2.097 4.998-4.283 7.035-6.1l.044-.027 79.497-62.294c.094-.072.198-.148.292-.226l.479-.385c3.149-2.461 7.245-3.584 11.296-3.413 4.019.176 7.905 1.63 10.713 4.316.479.457.875.908 1.217 1.338 1.69 2.147 2.444 4.646 2.307 7.09-.138 2.455-1.189 4.905-3.132 6.931-.462.479-.93.914-1.426 1.299l-56.359 44.161a6.506 6.506 0 0 0-1.123 9.133 6.51 6.51 0 0 0 9.133 1.112l56.354-44.161a26.335 26.335 0 0 0 2.808-2.516c4.178-4.355 6.446-9.738 6.755-15.243.27-4.707-.925-9.463-3.589-13.702a56.944 56.944 0 0 0 4.789-7.14c2.296-4.057 4.101-8.417 5.466-13.162l13.014-45.152c.072-.182.121-.38.165-.578l8.577-29.727c.419-1.442 1.398-2.698 2.758-3.611 1.503-1.029 3.501-1.618 5.73-1.618 1.778 0 3.265.16 4.465.556 1.068.358 2.081.969 3.077 1.916.771.721 1.316 1.492 1.629 2.279a5.2 5.2 0 0 1 .312 2.365zM162.16 441.999a12.368 12.368 0 0 1-4.013-7.889c-1.167-10.96-3.633-21.634-8.291-31.94-4.685-10.366-11.549-20.291-21.508-29.677-7.977-7.514-15.887-13.388-23.539-19.064-12.485-9.254-24.227-17.968-33.569-32.452-16.372-25.378-19.262-71.35-21.613-108.657-.611-9.777-1.195-18.97-2.009-27.53a5.104 5.104 0 0 1 .308-2.367c.314-.787.864-1.558 1.63-2.279 1.002-.947 2.015-1.558 3.083-1.916 1.2-.396 2.681-.556 4.464-.556 2.229 0 4.222.589 5.731 1.618 1.354.914 2.34 2.169 2.758 3.611l8.577 29.727c.039.198.094.385.165.578l13.014 45.152c1.365 4.745 3.165 9.105 5.466 13.162a56.902 56.902 0 0 0 4.784 7.14c-2.659 4.239-3.853 8.995-3.584 13.702.303 5.505 2.576 10.889 6.755 15.243a26.253 26.253 0 0 0 2.802 2.516l56.36 44.161c2.835 2.213 6.92 1.712 9.127-1.112 2.213-2.841 1.712-6.925-1.118-9.133l-56.36-44.161a14.28 14.28 0 0 1-1.426-1.299c-1.943-2.026-2.995-4.475-3.132-6.931-.143-2.444.616-4.943 2.301-7.09a13.17 13.17 0 0 1 1.222-1.338c2.802-2.686 6.694-4.14 10.707-4.316 4.057-.171 8.147.952 11.296 3.413l.484.385c.094.077.198.154.292.226l79.497 62.294.044.027c2.037 1.817 4.58 4.002 7.035 6.1 13.482 11.571 23.572 20.225 23.572 39.52v54.262h-73.045c-3.186.002-6.087-1.176-8.267-3.13zM95.451 174.943c-3.529 12.072-6.309 23.98-8.296 35.837l12.689 44.012c1.062 3.683 2.477 7.096 4.294 10.305a44.626 44.626 0 0 0 2.978 4.608c4.14-2.323 8.835-3.595 13.581-3.804 3.567-.16 7.189.292 10.636 1.365 1.167-15.32 2.989-29.545 5.477-42.63 3.055-16.086 7.096-30.459 12.1-43.126 1.365-3.452 1.2-3.028 1.261-3.187 5.643-14.561 9.87-25.494 29.171-27.084 4.233-.352 8.461.066 12.694 1.261 3.986 1.123 7.922 2.923 11.819 5.395 6.721 3.402 13.162 5.588 19.311 6.556 5.967.941 11.748.76 17.341-.539h.017a4.178 4.178 0 0 0 2.158-1.525 4.22 4.22 0 0 0 .815-2.543c-.06-3.886-7.107-7.311-12.733-10.036-.914-.446-1.795-.87-3.292-1.635a3455.845 3455.845 0 0 0-34.94-17.731 2242.805 2242.805 0 0 0-28.851-14.197c-.275.005-.556.022-.831.022a37.072 37.072 0 0 1-21.348-6.738c-5.527.639-11.445 3.083-17.054 7.382-5.918 4.531-11.412 11.076-15.711 19.686-5.172 13.122-9.642 25.872-13.286 38.346zm50.304-112.995c4.382-4.371 10.421-7.079 17.093-7.079s12.717 2.708 17.082 7.079a24.078 24.078 0 0 1 7.079 17.098 24.08 24.08 0 0 1-7.079 17.087c-4.365 4.371-10.41 7.074-17.082 7.074s-12.711-2.703-17.093-7.074c-4.365-4.382-7.074-10.421-7.074-17.087 0-6.677 2.709-12.721 7.074-17.098zM250.002 173.39a17.237 17.237 0 0 1-5.758 3.011 5.27 5.27 0 0 1-.754.182c-7.228 1.679-14.671 1.927-22.312.727-7.685-1.211-15.502-3.843-23.446-7.889a8.826 8.826 0 0 1-.853-.517c-2.824-1.8-5.62-3.088-8.362-3.853-2.697-.765-5.406-1.035-8.103-.809-11.186.925-14.159 8.582-18.106 18.778-.875 2.274-.76 2.026-1.266 3.292-4.734 11.984-8.549 25.565-11.428 40.731-2.742 14.412-4.646 30.299-5.736 47.623l76.959 60.301c.242.165.473.347.699.539a375.141 375.141 0 0 0 6.832 5.945c8.896 7.635 16.559 14.219 21.634 22.824 5.07-8.604 12.733-15.188 21.629-22.824a391.243 391.243 0 0 0 6.837-5.945c.226-.192.451-.374.694-.539l76.965-60.301c-1.09-17.324-2.995-33.211-5.736-47.623-2.885-15.166-6.694-28.747-11.434-40.731-.501-1.266-.391-1.018-1.261-3.292-3.953-10.195-6.92-17.853-18.106-18.778-2.697-.225-5.406.044-8.103.809-2.742.765-5.538 2.053-8.368 3.853-.27.187-.551.358-.853.517-7.938 4.046-15.755 6.678-23.44 7.889-7.646 1.2-15.089.952-22.317-.727a5.465 5.465 0 0 1-.754-.182 17.186 17.186 0 0 1-5.753-3.011zm19.24-23.583c-5.626 2.725-12.678 6.149-12.738 10.036-.011.93.286 1.822.82 2.543a4.182 4.182 0 0 0 2.158 1.525h.017c5.588 1.299 11.368 1.481 17.341.539 6.144-.969 12.59-3.154 19.306-6.556 3.903-2.472 7.833-4.272 11.824-5.395 4.228-1.195 8.461-1.613 12.695-1.261 19.295 1.591 23.528 12.524 29.165 27.084.066.16-.099-.264 1.266 3.187 5.004 12.667 9.045 27.04 12.1 43.126 2.488 13.085 4.31 27.31 5.478 42.63a31.18 31.18 0 0 1 10.636-1.365c4.745.209 9.435 1.481 13.581 3.804a43.766 43.766 0 0 0 2.973-4.608c1.822-3.209 3.231-6.622 4.294-10.305l12.694-44.012c-1.987-11.858-4.773-23.765-8.296-35.837-3.65-12.474-8.114-25.224-13.283-38.347-4.305-8.61-9.799-15.155-15.717-19.686-5.604-4.299-11.522-6.743-17.054-7.382a37.054 37.054 0 0 1-21.343 6.738c-.275 0-.556-.017-.837-.022a2241.592 2241.592 0 0 0-28.846 14.197 3503.81 3503.81 0 0 0-34.946 17.731c-1.499.766-2.374 1.19-3.288 1.636zm50.827-87.859a24.088 24.088 0 0 1 17.087-7.079c6.666 0 12.711 2.708 17.087 7.079a24.124 24.124 0 0 1 7.079 17.098c0 6.666-2.708 12.705-7.079 17.087a24.111 24.111 0 0 1-17.087 7.074 24.083 24.083 0 0 1-17.087-7.074 24.08 24.08 0 0 1-7.079-17.087 24.078 24.078 0 0 1 7.079-17.098zm144.142 115.681c-1.013-2.549-2.631-4.889-4.844-6.975-2.428-2.29-5.004-3.809-7.866-4.767-2.742-.914-5.549-1.272-8.599-1.272-4.833 0-9.358 1.426-13.024 3.909-3.826 2.582-6.667 6.32-7.966 10.812l-1.382 4.795a356.032 356.032 0 0 0-3.485-12.81c-3.82-13.085-8.412-26.226-13.674-39.575a6.265 6.265 0 0 0-.457-.925c-5.257-10.542-12.061-18.612-19.443-24.271-4.712-3.6-9.683-6.237-14.659-7.938a37.015 37.015 0 0 0 5.571-19.564c0-10.283-4.173-19.592-10.911-26.325-6.738-6.738-16.041-10.911-26.314-10.911-10.283 0-19.587 4.173-26.325 10.911-6.738 6.733-10.905 16.041-10.905 26.325 0 10.272 4.167 19.576 10.905 26.314a37.668 37.668 0 0 0 6.92 5.455 3005.128 3005.128 0 0 0-16.096 7.993 3465.371 3465.371 0 0 0-35.045 17.786c-.479.242-1.723.842-3.028 1.481-4.531 2.191-9.65 4.679-13.581 8.191-3.936-3.512-9.056-6.001-13.581-8.191-1.305-.639-2.549-1.238-3.033-1.481a3454.792 3454.792 0 0 0-35.045-17.786 2530.64 2530.64 0 0 0-16.096-7.993 37.71 37.71 0 0 0 6.92-5.455c6.738-6.738 10.911-16.041 10.911-26.314 0-10.283-4.173-19.592-10.911-26.325-6.738-6.738-16.041-10.911-26.319-10.911-10.272 0-19.581 4.173-26.319 10.911-6.738 6.733-10.905 16.041-10.905 26.325a36.961 36.961 0 0 0 5.571 19.564c-4.982 1.701-9.953 4.338-14.66 7.938-7.382 5.659-14.192 13.729-19.449 24.271-.171.286-.319.6-.446.925-5.274 13.349-9.859 26.49-13.685 39.575a355.884 355.884 0 0 0-3.479 12.81l-1.387-4.795c-1.294-4.492-4.14-8.23-7.96-10.812-3.666-2.483-8.191-3.909-13.025-3.909-3.055 0-5.857.358-8.599 1.272-2.863.958-5.445 2.477-7.872 4.767-2.208 2.086-3.831 4.426-4.839 6.975-1.035 2.62-1.42 5.433-1.134 8.39.749 7.8 1.332 17.159 1.96 27.112 2.444 38.832 5.461 86.676 23.655 114.888 10.63 16.471 23.303 25.873 36.779 35.865 7.322 5.433 14.886 11.048 22.361 18.089 8.621 8.125 14.55 16.675 18.563 25.554 4.035 8.935 6.176 18.293 7.217 27.96.688 6.485 3.743 12.15 8.252 16.196a25.286 25.286 0 0 0 16.983 6.507h159.148a25.322 25.322 0 0 0 16.988-6.507c4.503-4.046 7.558-9.711 8.247-16.196 1.035-9.667 3.176-19.025 7.217-27.96 4.013-8.879 9.942-17.429 18.557-25.554 7.481-7.041 15.045-12.656 22.367-18.089 13.476-9.992 26.148-19.394 36.778-35.865 18.194-28.213 21.205-76.056 23.649-114.888.628-9.953 1.211-19.311 1.96-27.112.284-2.956-.096-5.769-1.131-8.39z" clip-rule="evenodd"  opacity="1" data-original="#000000" class="hovered-path"></path></g></svg>
-                </div>
-                </div>
-            </div>
-            <div class="num-box" data-aos="fade-down" data-aos-delay="150">
-                <div class="num-left">
-                    <div class="num-num">200<span>+</span></div>
-                    <div class="num-des">DESTINATIONS</div>
-                </div>
-                <div class="num-right">
-                    <div class="num-svg">
-                        <img src="assets/images/num-tri1.svg" alt="" class="num-tri1">
-                        <img src="assets/images/num-tri2.svg" alt="" class="num-tri2">
-                    <svg class="num-icon" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths"><g><g data-name="Out line"><path d="M412.8 193.173a191.548 191.548 0 0 0-90.028-69.234q-.112-.041-.225-.08A191.179 191.179 0 0 0 256 112c-2.778 0-5.585.06-8.343.178l.686 15.986c2.53-.109 5.106-.164 7.657-.164a175.716 175.716 0 0 1 48.124 6.674A7.974 7.974 0 0 0 304 136v40a8 8 0 0 0 8 8h4.9l-4.49 13.47a8 8 0 0 0 1.343 7.528L344 242.806V320a8 8 0 0 0 4.422 7.155l32 16a8 8 0 0 0 7.156 0l9.23-4.615 20.505 35.88A175.957 175.957 0 0 1 256 480a178.457 178.457 0 0 1-24-1.629V464h32a8 8 0 0 0 8-8v-20l28.8-21.6a7.996 7.996 0 0 0 2.355-2.822l24-48a8 8 0 0 0-4.184-11.006l-40-16a7.997 7.997 0 0 0-5.5-.161l-15.805 5.268-5.905-23.62a8 8 0 0 0-3.645-4.919l-40-24a8 8 0 0 0-9.773 1.203l-18.937 18.937L152 284.155V264h40a7.999 7.999 0 0 0 5.657-2.343l64-64a8 8 0 0 0 0-11.314l-24-24-11.314 11.314L244.686 192l-56 56H144a8 8 0 0 0-8 8v32a8 8 0 0 0 3.002 6.247l40 32a7.999 7.999 0 0 0 10.655-.59l19.583-19.583 31.802 19.081 7.197 28.785a8 8 0 0 0 10.29 5.65l21.22-7.074 29.207 11.683-19.267 38.534L259.2 425.6a8 8 0 0 0-3.2 6.4v16h-32a8 8 0 0 0-8 8v19.426a175.506 175.506 0 0 1-24-7.423V424a8 8 0 0 0-1.6-4.8L168 389.334V360a7.999 7.999 0 0 0-2.343-5.657L112 300.686V200.29a8 8 0 0 0-14.604-4.515A191.972 191.972 0 0 0 222.62 493.11 193.941 193.941 0 0 0 256 496a192.048 192.048 0 0 0 177.64-119.028q.048-.116.091-.234a192.247 192.247 0 0 0-20.93-183.565ZM176 460.82a176.194 176.194 0 0 1-80-230.25V304a7.999 7.999 0 0 0 2.343 5.657L152 363.314V392a8 8 0 0 0 1.6 4.8l22.4 29.866Zm220.422-139.975L384 327.055l-24-12V240a8 8 0 0 0-1.753-4.998l-29.281-36.601 6.623-19.871A8 8 0 0 0 328 168h-8v-27.357l.63-.36a176.213 176.213 0 0 1 103.918 214.551l-17.602-30.803a8 8 0 0 0-10.524-3.186Z"  opacity="1" data-original="#000000" class="hovered-path"></path><path d="M160 232a8 8 0 0 0 6.247-3.002C168.932 225.642 232 146.138 232 88a72 72 0 0 0-144 0c0 58.138 63.068 137.642 65.753 140.998A8 8 0 0 0 160 232Zm0-200a56.064 56.064 0 0 1 56 56c0 42.43-40.214 101.288-56 122.756C144.214 189.288 104 130.43 104 88a56.064 56.064 0 0 1 56-56Z"  opacity="1" data-original="#000000" class="hovered-path"></path><path d="M200 88a40 40 0 1 0-40 40 40.045 40.045 0 0 0 40-40Zm-64 0a24 24 0 1 1 24 24 24.027 24.027 0 0 1-24-24Z"  opacity="1" data-original="#000000" class="hovered-path"></path></g></g></svg>
-                </div>
-                </div>
-            </div>
+          
         </div>
     </div>
     </div>
@@ -355,7 +330,7 @@
                     <div class="services-patch"></div>
                     <div class="s-left">
                         <div class="s-head">Corporate  <br> Events</div>
-                        <div class="s-tag">Create Unforgettable Corporate Experiences</div>
+                        <!-- <div class="s-tag">Create Unforgettable Corporate Experiences</div> -->
                     </div>
                     <div class="s-right">
                         <div class="s-nor">
@@ -363,13 +338,13 @@
                             <ul>
                                 <li>Launch Events</li>
                                 <li>Employee Engagement Programs</li>
-                                <li>Annual Day / Family Day Celebrations</li>
+                                <li>Annual Day </li>
                                 <li>Team Outing Activities</li>
                             </ul>   
                             <ul>
-                                <li>Recognition & Reward (RNR) Events</li>
-                                <li>MICE (Meetings, Incentives, Conferences, & Exhibitions)</li>
-                                <li>PR Activities (Press Releases / Press Conferences)</li>
+                                <li>Recognition & Rewards Events</li>
+                                <li>MICE Events</li>
+                                <li>PR Activities</li>
                             </ul>
                         </div>
                               </div>
@@ -378,11 +353,11 @@
                             <ul>
                                 <li>Launch Events</li>
                                 <li>Employee Engagement Programs</li>
-                                <li>Annual Day / Family Day Celebrations</li>
+                                <li>Annual Day</li>
                                 <li>Team Outing Activities</li>
-                                <li>Recognition & Reward (RNR) Events</li>
-                                <li>MICE (Meetings, Incentives, Conferences, & Exhibitions)</li>
-                                <li>PR Activities (Press Releases / Press Conferences)</li>
+                                <li>Recognition & Rewards Events</li>
+                                <li>MICE Events</li>
+                                <li>PR Activities</li>
                             </ul>
                         </div>
                         <div class="s-img">
@@ -395,21 +370,21 @@
                     <div class="services-patch"></div>
                     <div class="s-left">
                         <div class="s-head">Exhibitions</div>
-                        <div class="s-tag">Stand Out at Every Exhibition</div>
+                        <!-- <div class="s-tag">Stand Out at Every Exhibition</div> -->
                     </div>
                     <div class="s-right">
                         <div class="s-nor">
                         <div class="s-des">
                             <ul>
-                                <li>Launch Events</li>
-                                <li>Employee Engagement Programs</li>
-                                <li>Annual Day / Family Day Celebrations</li>
-                                <li>Team Outing Activities</li>
+                                <li>Prouduct Showcases</li>
+                                <li>Trade Shows</li>
+                                <li>Industry Expos</li>
+                                <li>Art and Cultural Exhibits</li>
                             </ul>   
                             <ul>
-                                <li>Recognition & Reward (RNR) Events</li>
-                                <li>MICE (Meetings, Incentives, Conferences, & Exhibitions)</li>
-                                <li>PR Activities (Press Releases / Press Conferences)</li>
+                                <li>Technology Demonstrations</li>
+                                <li>Interactive Kiosks</li>
+                                <li>Pop-Up Exhibits</li>
                             </ul>
                         </div>
                         </div>
@@ -435,34 +410,28 @@
                     <div class="services-patch"></div>
                     <div class="s-left">
                         <div class="s-head">Branding</div>
-                        <div class="s-tag">Strengthen Your Brand Identity</div>
+                        <!-- <div class="s-tag">Strengthen Your Brand Identity</div> -->
                     </div>
                     <div class="s-right">
                         <div class="s-nor">
                         <div class="s-des">
                             <ul>
-                                <li>Launch Events</li>
-                                <li>Employee Engagement Programs</li>
-                                <li>Annual Day / Family Day Celebrations</li>
-                                <li>Team Outing Activities</li>
-                            </ul>   
+                                <li>Curated Styling</li>
+                                <li>Spatial Design</li>
+                            </ul>
                             <ul>
-                                <li>Recognition & Reward (RNR) Events</li>
-                                <li>MICE (Meetings, Incentives, Conferences, & Exhibitions)</li>
-                                <li>PR Activities (Press Releases / Press Conferences)</li>
+                                <li>Tailored Aesthetics</li>
+                                <li>Custom Concepts</li>
                             </ul>
                         </div>
                         </div>
                         <div class="s-hov">
                         <div class="s-points">
                             <ul>
-                                <li>Product Showcases</li>
-                                <li>Trade Shows</li>
-                                <li>Industry Expos</li>
-                                <li>Art and Cultural Exhibits</li>
-                                <li>Technology Demonstrations</li>
-                                <li>Interactive Kiosks</li>
-                                <li>Pop-Up Exhibits</li>
+                                <li>Curated Styling</li>
+                                <li>Spatial Design</li>
+                                <li>Tailored Aesthetics</li>
+                                <li>Custom Concepts</li>
                             </ul>
                         </div>
                         <div class="s-img">
@@ -474,35 +443,29 @@
                 <div class="services-box" data-aos="fade-down">
                     <div class="services-patch"></div>
                     <div class="s-left">
-                        <div class="s-head">Virtual <br> Events</div>
-                        <div class="s-tag">Seamlessly Connect Online</div>
+                        <div class="s-head">Immersive <br> Experiences</div>
+                        <!-- <div class="s-tag">Seamlessly Connect Online</div> -->
                     </div>
                     <div class="s-right">
                         <div class="s-nor">
                         <div class="s-des">
                             <ul>
-                                <li>Launch Events</li>
-                                <li>Employee Engagement Programs</li>
-                                <li>Annual Day / Family Day Celebrations</li>
-                                <li>Team Outing Activities</li>
+                                <li>Interactive Installations</li>
+                                <li>Sensory Design</li>
                             </ul>   
                             <ul>
-                                <li>Recognition & Reward (RNR) Events</li>
-                                <li>MICE (Meetings, Incentives, Conferences, & Exhibitions)</li>
-                                <li>PR Activities (Press Releases / Press Conferences)</li>
+                                <li>Thematic Storytelling</li>
+                                <li>Experiential Setups</li>
                             </ul>
                         </div>
                     </div>
                     <div class="s-hov">
                         <div class="s-points">
                             <ul>
-                                <li>Product Showcases</li>
-                                <li>Trade Shows</li>
-                                <li>Industry Expos</li>
-                                <li>Art and Cultural Exhibits</li>
-                                <li>Technology Demonstrations</li>
-                                <li>Interactive Kiosks</li>
-                                <li>Pop-Up Exhibits</li>
+                                <li>Interactive Installations</li>
+                                <li>Sensory Design</li>
+                                <li>Thematic Storytelling</li>
+                                <li>Experiential Setups</li>
                             </ul>
                         </div>
                         
@@ -608,65 +571,59 @@
     <div id="our-clients">
         <div class="our-container">
             <h2 class="our-head title" data-aos="fade-down"><span>OUR CLIENTS <img src="assets/images/tri-2.svg" class="sTri" alt=""></span> </h2>
-            <div class="our-boxes" > 
+            <div class="our-boxes">
                 <div class="loop-holder holder1">
                     <div class="loop-holder__text looptext1">
-                        <div class="our-logo"><img src="assets/images/logo/Accion Labs.png" alt=""></div>
-                        <div class="our-logo"><img src="assets/images/logo/address health.jpg" alt=""></div>
-                        <div class="our-logo"><img src="assets/images/logo/ADI - ASSOCATION OF DESIGNERS INDIA.png" style="width: 45%" alt=""></div>
-                        <div class="our-logo"><img src="assets/images/logo/allen career institute.avif" style="width: 45%;" alt=""></div>
-                        <div class="our-logo"><img src="assets/images/logo/alliance university.jpg" style="width: 45%;" alt=""></div>
-                        <div class="our-logo"><img src="assets/images/logo/Anarock-1024x427.png" alt="" style="width: 100%;"></div>
-                        <div class="our-logo"><img src="assets/images/logo/Anchor by panasonic.png" style="width: 65%;" alt=""></div>
-                        <div class="our-logo"><img src="assets/images/logo/asha swewets.png" alt="" ></div>
-                        <div class="our-logo"><img src="assets/images/logo/Ashok_Leyland-Logo.wine.png" alt="" style="width: 70%;"></div>
-                        <div class="our-logo"><img src="assets/images/logo/aster.png" style="width: 45%"alt=""></div>
-                        <div class="our-logo"><img src="assets/images/logo/AZZETS.png" style="width: 50%" alt=""></div>
-                        <div class="our-logo"><img src="assets/images/logo/Biocon-removebg-preview (1).png" alt=""></div>
-                        <div class="our-logo"><img src="assets/images/logo/bisleri.jpg" alt="" style="width: 50%;"></div>
-                        <div class="our-logo"><img src="assets/images/logo/Brigade-removebg-preview.png" style="width: 45%" alt=""></div>
-                        <div class="our-logo"><img src="assets/images/logo/brindhavan group.jpeg" style="width: 40%" alt=""></div>
-                        <div class="our-logo"><img src="assets/images/logo/british biologicals.avif" alt=""></div>
-                        <div class="our-logo"><img src="assets/images/logo/Broadcom.png" alt=""></div>
-                        <div class="our-logo"><img src="assets/images/logo/career utsav.png" alt=""></div>
-                        <div class="our-logo"><img src="assets/images/logo/citrix-logo.png" style="width: 50%;" alt=""></div>
-                        <div class="our-logo"><img src="assets/images/logo/coco_cola.png" style="width: 50%;" alt=""></div>
-                        <div class="our-logo"><img src="assets/images/logo/collins-aerospace.png" alt=""></div>
-                        <div class="our-logo"><img src="assets/images/logo/dq labs.jpeg" alt=""></div>
-                        <div class="our-logo"><img src="assets/images/logo/edelman.png" alt=""></div>
-                        <div class="our-logo"><img src="assets/images/logo/FLOW .png" alt=""></div>
-                        <div class="our-logo"><img src="assets/images/logo/Fluke_Corporation_logo.svg.png" alt=""></div>
-                    <div class="our-logo"><img src="assets/images/logo/zensar.png" alt=""></div>
+                        <div class="our-logo"><img src="assets/images/logo/116473.Shriram.png" alt="Shriram Properties is India's leading residential real estate developer focused on affordable housing categories across Bangalore, Chennai, Vizag, Kolkata & Coimbatore."></div>
+                        <div class="our-logo"><img src="assets/images/logo/ADI logo.png" alt="ADI vision is to be a world class network representing professional interests of Indian Design community, creating a meaningful interface between design professionals, people as users, the industry, education institutions and the policy makers."></div>
+                        <div class="our-logo"><img src="assets/images/logo/ALLEN logo.png"  alt="ALLEN - India's best coaching institute for NEET, IIT JEE, and classes 6 to 10 with 36 years of experience offering unparalleled personalized guidance. Join today and embark on a journey to academic excellence."></div>
+                        <div class="our-logo"><img src="assets/images/logo/Alliance University Logo.png"  alt="Alliance University Campus in Bangalore has state-of-the-art infrastructure with serene ambience. We offer graduate, post-graduate and certification courses."></div>
+                        <div class="our-logo"><img src="assets/images/logo/Aster Hospital.png"  alt="Aster CMI is one of the best multi-specialty Hospital in Bangalore that offers the best medical care for all your ailments with clinical excellence, cutting edge technology, and personalized service."></div>
+                        <div class="our-logo"><img src="assets/images/logo/Ather Logo.png" alt="Ather Energy - Building fast and intelligent electric scooters in India" style="width: 100%;"></div>
+                        <div class="our-logo"><img src="assets/images/logo/Brindavan Group of Institutions.png" style="width: 65%;" alt="Brindavan Group of Institutions"></div>
+                        <div class="our-logo"><img src="assets/images/logo/British Biological Logo.png" alt="Welcome to British Biologicals, We are ‘The Protein People’" ></div>
+                        <div class="our-logo"><img src="assets/images/logo/Coca Cola Logo-01.png" alt="A woman smiles as she holds a skateboard overhead featuring 5 Coca-Cola brands" style="width: 70%;"></div>
+                        <div class="our-logo"><img src="assets/images/logo/collins (1)-01.png"  alt="At Collins Aerospace, we’re working side-by-side with our customers and partners to dream, design and deliver solutions that redefine the future of our industry. By reaching across the markets we serve and drawing on our vast portfolio of expertise, we are making the most powerful concepts in aerospace a reality every day. Explore all the ways we’re redefining aerospace with one of the deepest capability sets and broadest perspectives in the industry."></div>
+                        <div class="our-logo"><img src="assets/images/logo/Flow Logo.png" style="width: 50%" alt="About Flow Realty We are one of the biggest sales outsourcing partners or mandate players in South India, with a success rate of over 90% in the last 3 years. Whether it is a new launch or a stressed project turnaround, you can count on us to break the sales puzzle and deliver what you"></div>
+                        <div class="our-logo"><img src="assets/images/logo/Gokaldas Logo.png" alt="Gokaldas Exports | Leading manufacturer & exporter of apparels across the world"></div>
+                        <div class="our-logo"><img src="assets/images/logo/116473.Shriram.png" alt="Shriram Properties is India's leading residential real estate developer focused on affordable housing categories across Bangalore, Chennai, Vizag, Kolkata & Coimbatore."></div>
+                        <div class="our-logo"><img src="assets/images/logo/ADI logo.png" alt="ADI vision is to be a world class network representing professional interests of Indian Design community, creating a meaningful interface between design professionals, people as users, the industry, education institutions and the policy makers."></div>
+                        <div class="our-logo"><img src="assets/images/logo/ALLEN logo.png"  alt="ALLEN - India's best coaching institute for NEET, IIT JEE, and classes 6 to 10 with 36 years of experience offering unparalleled personalized guidance. Join today and embark on a journey to academic excellence."></div>
+                        <div class="our-logo"><img src="assets/images/logo/Alliance University Logo.png"  alt="Alliance University Campus in Bangalore has state-of-the-art infrastructure with serene ambience. We offer graduate, post-graduate and certification courses."></div>
+                        <div class="our-logo"><img src="assets/images/logo/Aster Hospital.png"  alt="Aster CMI is one of the best multi-specialty Hospital in Bangalore that offers the best medical care for all your ailments with clinical excellence, cutting edge technology, and personalized service."></div>
+                        <div class="our-logo"><img src="assets/images/logo/Ather Logo.png" alt="Ather Energy - Building fast and intelligent electric scooters in India" style="width: 100%;"></div>
+                        <div class="our-logo"><img src="assets/images/logo/Brindavan Group of Institutions.png" style="width: 65%;" alt="Brindavan Group of Institutions"></div>
+                        <div class="our-logo"><img src="assets/images/logo/British Biological Logo.png" alt="Welcome to British Biologicals, We are ‘The Protein People’" ></div>
+                        <div class="our-logo"><img src="assets/images/logo/Coca Cola Logo-01.png" alt="A woman smiles as she holds a skateboard overhead featuring 5 Coca-Cola brands" style="width: 70%;"></div>
+                        <div class="our-logo"><img src="assets/images/logo/collins (1)-01.png"  alt="At Collins Aerospace, we’re working side-by-side with our customers and partners to dream, design and deliver solutions that redefine the future of our industry. By reaching across the markets we serve and drawing on our vast portfolio of expertise, we are making the most powerful concepts in aerospace a reality every day. Explore all the ways we’re redefining aerospace with one of the deepest capability sets and broadest perspectives in the industry."></div>
+                        <div class="our-logo"><img src="assets/images/logo/Flow Logo.png" style="width: 50%" alt="About Flow Realty We are one of the biggest sales outsourcing partners or mandate players in South India, with a success rate of over 90% in the last 3 years. Whether it is a new launch or a stressed project turnaround, you can count on us to break the sales puzzle and deliver what you"></div>
+                        <div class="our-logo"><img src="assets/images/logo/Gokaldas Logo.png" alt="Gokaldas Exports | Leading manufacturer & exporter of apparels across the world"></div>
                     </div>
                   </div>
                   <div class="loop-holder holder2">
                     <div class="loop-holder__text looptext2">
-                    <div class="our-logo"><img src="assets/images/logo/Accion Labs.png" alt=""></div>
-                    <div class="our-logo"><img src="assets/images/logo/gokaldas exports ltd.png" alt=""></div>
-                    <div class="our-logo"><img src="assets/images/logo/INDIA MUSIC EXPERIENCE - IME.png" style="width: 45%" alt=""></div>
-                    <div class="our-logo"><img src="assets/images/logo/indian oil.png" alt=""></div>
-                    <div class="our-logo"><img src="assets/images/logo/kcp.png" alt=""></div>
-                    <div class="our-logo"><img src="assets/images/logo/kirloskar.jpg" style="width: 45%" alt=""></div>
-                    <div class="our-logo"><img src="assets/images/logo/law asia.png" alt=""></div>
-                    <div class="our-logo"><img src="assets/images/logo/logo_Ather_Energy.jpg" style="width: 40%" alt=""></div>
-                    <div class="our-logo"><img src="assets/images/logo/LTI MINDTREE.png" alt=""></div>
-                    <div class="our-logo"><img src="assets/images/logo/Maruti_Suzuki.png" alt=""></div>
-                    <div class="our-logo"><img src="assets/images/logo/medical mentors.jpeg" style="width: 45%;" alt=""></div>
-                    <div class="our-logo"><img src="assets/images/logo/mt educare.png" alt=""></div>
-                    <div class="our-logo"><img src="assets/images/logo/MVJCE_.png" alt=""></div>
-                    <div class="our-logo"><img src="assets/images/logo/Nexa-removebg-preview.png" alt=""></div>
-                    <div class="our-logo"><img src="assets/images/logo/nikon-removebg-preview.png" alt=""></div>
-                    <div class="our-logo"><img src="assets/images/logo/ola-removebg-preview.png" alt=""></div>
-                    <div class="our-logo"><img src="assets/images/logo/oyo_rooms-removebg-preview.png" alt=""></div>
-                    <div class="our-logo"><img src="assets/images/logo/portea.png" alt=""></div>
-                    <div class="our-logo"><img src="assets/images/logo/Pratt_&_Whitney_Logo.jpg" style="width: 40%;" alt=""></div>
-                    <div class="our-logo"><img src="assets/images/logo/presidency uni.png" alt=""></div>
-                    <div class="our-logo"><img src="assets/images/logo/reva-uni.jpg" alt=""></div>
-                    <div class="our-logo"><img src="assets/images/logo/SHOBA.png" style="width: 30%;" alt=""></div>
-                    <div class="our-logo"><img src="assets/images/logo/shriramproperties.jpg" alt=""></div>
-                    <div class="our-logo"><img src="assets/images/logo/withum.png" alt=""></div>
-                    <div class="our-logo"><img src="assets/images/logo/world at work.png" alt=""></div>
-                    <div class="our-logo"><img src="assets/images/logo/yahoo.png" alt=""></div>
+                    <div class="our-logo"><img src="assets/images/logo/Kirloskar Logo.png" alt="Welcome to the official website of Kirloskar, Explore the legacy of Kirloskar Group - Your trusted source for information about Kirloskar Companies with over 130 years of industrial excellence"></div>
+                    <div class="our-logo"><img src="assets/images/logo/Lawasia Logo-01.png" alt="Lawasia"></div>
+                    <div class="our-logo"><img src="assets/images/logo/Maruti Suzuki Logo-01.png"  alt="Maruti Suzuki Cars in India: Price, Mileage, Features & Specifications | Maruti Suzuki Arena"></div>
+                    <div class="our-logo"><img src="assets/images/logo/Medical Mentor Logo.png" alt="Achieve your medical career goals with NEET UG and NEET PG counselling guidance by Medical Mentor. Personalized handholding till admission since 2016. Book your free 1-to-1 counselling session today!"></div>
+                    <div class="our-logo"><img src="assets/images/logo/MT EDUCARE.png" alt="Achieve your medical career goals with NEET UG and NEET PG counselling guidance by Medical Mentor. Personalized handholding till admission since 2016. Book your free 1-to-1 counselling session today!"></div>
+                    <div class="our-logo"><img src="assets/images/logo/Pratt & Whitney Logo.png"  alt="Transforming the future of aviation"></div>
+                    <div class="our-logo"><img src="assets/images/logo/Reva university Logo.png" alt="REVA University is one of the leading universities in Bangalore offering a range of undergraduate, postgraduate, diploma and PhD programmes. Explore our diverse range of programs and state-of-the-art facilities for cutting-edge education and diverse learning experiences."></div>
+                    <div class="our-logo"><img src="assets/images/logo/Withum Logo.png" alt="Withum is a nationally ranked advisory and public accounting firm providing to businesses and individuals on a local-to-global scale."></div>
+                    <div class="our-logo"><img src="assets/images/logo/WorldatWork Logo.png" alt="WorldatWork is dedicated to elevating employee experiences and driving organizational performance through rewards, offering education, leadership and community."></div>
+                    <div class="our-logo"><img src="assets/images/logo/YAHOO Logo.png" alt="The search engine that helps you find exactly what you're looking for. Find the most relevant information, video, images, and answers from all across the Web."></div>
+                    <div class="our-logo"><img src="assets/images/logo/Zensar_Technologies_logo.png" alt="Zensar is a global organization which conceptualizes, builds, and manages digital products through experience design, data engineering, and advanced analytics for over 200 leading companies. Our solutions leverage industry-leading platforms to help our clients be competitive, agile, and disruptive while moving with velocity through change and opportunity."></div>
+                    <div class="our-logo"><img src="assets/images/logo/Kirloskar Logo.png" alt="Welcome to the official website of Kirloskar, Explore the legacy of Kirloskar Group - Your trusted source for information about Kirloskar Companies with over 130 years of industrial excellence"></div>
+                    <div class="our-logo"><img src="assets/images/logo/Lawasia Logo-01.png" alt="Lawasia"></div>
+                    <div class="our-logo"><img src="assets/images/logo/Maruti Suzuki Logo-01.png"  alt="Maruti Suzuki Cars in India: Price, Mileage, Features & Specifications | Maruti Suzuki Arena"></div>
+                    <div class="our-logo"><img src="assets/images/logo/Medical Mentor Logo.png" alt="Achieve your medical career goals with NEET UG and NEET PG counselling guidance by Medical Mentor. Personalized handholding till admission since 2016. Book your free 1-to-1 counselling session today!"></div>
+                    <div class="our-logo"><img src="assets/images/logo/MT EDUCARE.png" alt="Achieve your medical career goals with NEET UG and NEET PG counselling guidance by Medical Mentor. Personalized handholding till admission since 2016. Book your free 1-to-1 counselling session today!"></div>
+                    <div class="our-logo"><img src="assets/images/logo/Pratt & Whitney Logo.png"  alt="Transforming the future of aviation"></div>
+                    <div class="our-logo"><img src="assets/images/logo/Reva university Logo.png" alt="REVA University is one of the leading universities in Bangalore offering a range of undergraduate, postgraduate, diploma and PhD programmes. Explore our diverse range of programs and state-of-the-art facilities for cutting-edge education and diverse learning experiences."></div>
+                    <div class="our-logo"><img src="assets/images/logo/Withum Logo.png" alt="Withum is a nationally ranked advisory and public accounting firm providing to businesses and individuals on a local-to-global scale."></div>
+                    <div class="our-logo"><img src="assets/images/logo/WorldatWork Logo.png" alt="WorldatWork is dedicated to elevating employee experiences and driving organizational performance through rewards, offering education, leadership and community."></div>
+                    <div class="our-logo"><img src="assets/images/logo/YAHOO Logo.png" alt="The search engine that helps you find exactly what you're looking for. Find the most relevant information, video, images, and answers from all across the Web."></div>
+                    <div class="our-logo"><img src="assets/images/logo/Zensar_Technologies_logo.png" alt="Zensar is a global organization which conceptualizes, builds, and manages digital products through experience design, data engineering, and advanced analytics for over 200 leading companies. Our solutions leverage industry-leading platforms to help our clients be competitive, agile, and disruptive while moving with velocity through change and opportunity."></div>
                   </div>
             </div>
         </div>
@@ -1123,10 +1080,16 @@
         <div id="map">
             <div class="map-container">
                 <div class="map-left">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.5320891272368!2d77.566442!3d13.001752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17c48efcdf7f%3A0x6cb44ef5e433b405!2sFuel+India!5e0!3m2!1sen!2sin!4v1434967188155" width="100%" frameborder="0" style="border:0"></iframe>
+                    <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.5320891272368!2d77.566442!3d13.001752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17c48efcdf7f%3A0x6cb44ef5e433b405!2sFuel+India!5e0!3m2!1sen!2sin!4v1434967188155&z=15" 
+                    width="100%" 
+                    frameborder="0" 
+                    style="border:0">
+                  </iframe>\ 
                 </div>
                 <div class="map-right">
                     <div class="map-head">Bengaluru</div>
+                    
                 </div>
             </div>
         </div>
