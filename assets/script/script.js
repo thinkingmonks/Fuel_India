@@ -138,6 +138,28 @@ document.addEventListener("DOMContentLoaded", function () {
               folderPath + "/bdf5.webp",
           ];
       }
+      else if (folderPath === "assets/images/ourWorks/cu") {
+        imagePaths = [
+            folderPath + "/cu1.webp",
+            folderPath + "/cu2.webp",
+            folderPath + "/cu3.webp",
+            folderPath + "/cu4.webp",
+            folderPath + "/cu5.webp",
+            folderPath + "/cu6.webp",
+            folderPath + "/cu7.webp",
+            folderPath + "/cu8.webp",
+            folderPath + "/cu9.webp",
+            folderPath + "/cu10.webp",
+            folderPath + "/cu11.webp"
+        ];
+    }
+    else if (folderPath === "assets/images/ourWorks/rs@100") {
+      imagePaths = [
+          folderPath + "/rs1.webp",
+          folderPath + "/rs2.webp",
+          folderPath + "/rs3.webp",
+      ];
+  }
         callback();
     }
 
@@ -163,6 +185,14 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("home-image4").addEventListener("click", function () {
       openPopup("assets/images/ourWorks/bdf");
   });
+
+  document.getElementById("home-image5").addEventListener("click", function () {
+    openPopup("assets/images/ourWorks/cu");
+});
+
+document.getElementById("home-image2").addEventListener("click", function () {
+  openPopup("assets/images/ourWorks/rs@100");
+});
 
   function closePopup() {
     popup.style.opacity = 0;
