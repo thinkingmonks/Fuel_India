@@ -138,6 +138,7 @@ document.addEventListener("DOMContentLoaded", function () {
               folderPath + "/bdf5.webp",
           ];
       }
+      
       else if (folderPath === "assets/images/ourWorks/cu") {
         imagePaths = [
             folderPath + "/cu1.webp",
