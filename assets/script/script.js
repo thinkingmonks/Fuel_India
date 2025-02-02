@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function () {
               folderPath + "/bdf5.webp",
           ];
       }
-      
+
       else if (folderPath === "assets/images/ourWorks/cu") {
         imagePaths = [
             folderPath + "/cu1.webp",
@@ -229,10 +229,33 @@ nextBtn.addEventListener("click", function (e) {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const hovBtns = document.querySelectorAll(".hov-btn");
+
+  hovBtns.forEach((btn) => {
+      btn.addEventListener("click", function (event) {
+          event.stopPropagation(); // Prevents event bubbling
+          const dropdown = this.querySelector(".btn-dropdown");
+          
+          if (dropdown) {
+              dropdown.classList.toggle("btn-hov"); // Toggle class to show/hide
+          }
+      });
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener("click", function () {
+      document.querySelectorAll(".btn-dropdown").forEach((dropdown) => {
+          dropdown.classList.remove("btn-hov");
+      });
+  });
+});
+
 ///////////    overview popup section    /////////////// 
 document.addEventListener("DOMContentLoaded", function () {
   const vidCont = document.querySelector(".vid-cont");
   const popup = document.getElementById("over-popup");
+  const high = document.getElementById("high-vid");
   const closeBtn = document.querySelector(".over-close-btn");
   const iframe = document.getElementById("videoFrame");
   const youtubeURL = "https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1"; // Replace with actual video ID
@@ -241,6 +264,11 @@ document.addEventListener("DOMContentLoaded", function () {
       iframe.src = youtubeURL;
       popup.style.display = "flex";
   });
+
+  high.addEventListener("click", function (){
+  iframe.src = youtubeURL;
+  popup.style.display = "flex";
+});
 
   closeBtn.addEventListener("click", function () {
       closePopup();
@@ -384,7 +412,7 @@ document.querySelectorAll('.home-box').forEach(homeBox => {
     responsiveClass:true,
     responsive:{
       0:{
-          items:2,
+          items:1,
       },
       600:{
           items:2,
