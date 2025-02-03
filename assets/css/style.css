@@ -2180,6 +2180,7 @@ display: flex;
 }
 .footer-box .address{
     padding: .5vw 0;
+    translate: 0 9px;
 }
 .f-head{
     font-size: 3vw;
