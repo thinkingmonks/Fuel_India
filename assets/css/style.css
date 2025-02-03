@@ -173,14 +173,19 @@ nav ul li{
 }
 nav ul li:after{
     content: '';
-    width: 100%;
+    position: absolute;
+    width: 0%;
     height: 1px;
     display: block;
     background-color: #EE233C;
+    transition: all ease .4s;
 }
 .navActive li{
     color: #EE233C;
     font-weight: 900;
+}
+.navActive li:after{
+    width: 100%;
 }
 ul li:hover::after{
   width: 100%;
