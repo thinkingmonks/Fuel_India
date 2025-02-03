@@ -116,18 +116,27 @@ document.addEventListener("DOMContentLoaded", function () {
         // Simulate loading images by defining them manually (server logic needed for dynamic loading)
         if (folderPath === "assets/images/ourWorks/ime") {
             imagePaths = [
-                folderPath + "/ime1.webp",
-                folderPath + "/ime2.webp",
                 folderPath + "/ime3.webp",
                 folderPath + "/ime4.webp",
+                folderPath + "/ime5.webp",
+                folderPath + "/ime6.webp",
+                folderPath + "/ime7.webp",
+                folderPath + "/ime8.webp",
+                folderPath + "/ime9.webp",
+                folderPath + "/ime10.webp",
+                folderPath + "/ime11.webp",
             ];
         } else if (folderPath === "assets/images/ourWorks/bs") {
             imagePaths = [
-                folderPath + "/bs1.webp",
-                folderPath + "/bs2.webp",
-                folderPath + "/bs3.webp",
-                folderPath + "/bs4.webp",
-                folderPath + "/bs5.webp",
+                folderPath + "/bird_song_exhibition_2.webp",
+                folderPath + "/bird_song_exhibition_1.webp",
+                folderPath + "/bird_song_exhibition_3.webp",
+                folderPath + "/bird_song_exhibition_4.webp",
+                folderPath + "/bird_song_exhibition_5.webp",
+                folderPath + "/bird_song_exhibition_6.webp",
+                folderPath + "/bird_song_exhibition_7.webp",
+                folderPath + "/bird_song_exhibition_8.webp",
+                folderPath + "/bird_song_exhibition_9.webp",
             ];
         } else if (folderPath === "assets/images/ourWorks/bdf") {
           imagePaths = [
@@ -136,6 +145,11 @@ document.addEventListener("DOMContentLoaded", function () {
               folderPath + "/bdf3.webp",
               folderPath + "/bdf4.webp",
               folderPath + "/bdf5.webp",
+              
+              folderPath + "/bdf6.webp",
+              folderPath + "/bdf7.webp",
+              folderPath + "/bdf8.webp",
+              folderPath + "/bdf9.webp",
           ];
       }
 
@@ -229,27 +243,57 @@ nextBtn.addEventListener("click", function (e) {
     });
 });
 
+// button dropdown
 document.addEventListener("DOMContentLoaded", function () {
   const hovBtns = document.querySelectorAll(".hov-btn");
 
-  hovBtns.forEach((btn) => {
-      btn.addEventListener("click", function (event) {
-          event.stopPropagation(); // Prevents event bubbling
-          const dropdown = this.querySelector(".btn-dropdown");
-          
-          if (dropdown) {
-              dropdown.classList.toggle("btn-hov"); // Toggle class to show/hide
-          }
-      });
-  });
+  function handleDropdown(event) {
+    event.stopPropagation(); // Prevents event bubbling
+    const dropdown = this.querySelector(".btn-dropdown");
 
-  // Close dropdown when clicking outside
-  document.addEventListener("click", function () {
-      document.querySelectorAll(".btn-dropdown").forEach((dropdown) => {
-          dropdown.classList.remove("btn-hov");
+    if (dropdown) {
+      dropdown.classList.toggle("btn-hov"); // Toggle class to show/hide
+    }
+  }
+
+  function closeDropdowns() {
+    document.querySelectorAll(".btn-dropdown").forEach((dropdown) => {
+      dropdown.classList.remove("btn-hov");
+    });
+  }
+
+  function addListeners() {
+    if (window.matchMedia("(max-width: 1023px)").matches) {
+      hovBtns.forEach((btn) => {
+        btn.addEventListener("click", handleDropdown);
       });
-  });
+
+      // Close dropdown when clicking outside
+      document.addEventListener("click", closeDropdowns);
+    }
+  }
+
+  function removeListeners() {
+    hovBtns.forEach((btn) => {
+      btn.removeEventListener("click", handleDropdown);
+    });
+    document.removeEventListener("click", closeDropdowns);
+  }
+
+  function checkScreenSize() {
+    if (window.matchMedia("(max-width: 1023px)").matches) {
+      addListeners();
+    } else {
+      removeListeners();
+    }
+  }
+
+  checkScreenSize(); // Run initially
+
+  // Listen for screen size changes
+  window.addEventListener("resize", checkScreenSize);
 });
+
 
 ///////////    overview popup section    /////////////// 
 document.addEventListener("DOMContentLoaded", function () {
