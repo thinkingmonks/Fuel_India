@@ -29,7 +29,7 @@ body,html{
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    background-color: #EDEDEF;
 }
 p{
     margin: 0;
@@ -489,7 +489,7 @@ ul li:hover::after{
     width: 5vw;
     height: 5vw;
     left: -4vw;
-    bottom: -5vw;
+    bottom: -4.9vw;
     animation: swing linear infinite 3s;
 }
 .home-des{
@@ -544,7 +544,7 @@ ul li:hover::after{
     overflow: hidden;
     backdrop-filter: blur(2px);
     color: #fff;
-    z-index: -1;
+    z-index: 5;
     transition: all ease .4s;
 }
 .btn-mail,.btn-phone{
@@ -573,7 +573,8 @@ ul li:hover::after{
 }
 .home-btn:hover .btn-dropdown{
     opacity: 1;
-    bottom: -5vw;
+    bottom: -4.9vw;
+    z-index: 5;
     height: fit-content;
 }
 .title{
@@ -2650,7 +2651,7 @@ display: flex;
     /* overview */
     #overview{
         align-items: center;  
-        padding: 6vw 0 0vw;
+        padding: 15vw 0 0vw;
         height: 88vh;
     }
     .overview-container {
@@ -3222,7 +3223,7 @@ display: flex;
         left: 0;
         width: 100%;
         height: 10vh;
-        height: 8vh;
+        height: 12vh;
         z-index: 100;
         backdrop-filter: blur(2px);
         background-color: #00000094;
@@ -3499,7 +3500,7 @@ display: flex;
         gap: 2vw;
     }
     .num-box {
-        width: 43vw;
+        width: 40vw;
         height: 20vw;
         border-radius: 3vw;
     }

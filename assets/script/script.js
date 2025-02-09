@@ -2,7 +2,7 @@
 const navEl = document.querySelector('#navbar');
 
 window.addEventListener('scroll', () => {
-    if (window.innerWidth >= 780) { // Only apply on screens >= 768px
+    if (window.innerWidth >= 1050) { // Only apply on screens >= 768px
         if (window.scrollY >= 56) {
             navEl.classList.add('navbar-scrolled');
         } else {
@@ -16,7 +16,7 @@ window.addEventListener('scroll', () => {
 const mobPatch = document.querySelector(".mob-patch");
 
 window.addEventListener("scroll", () => {
-    if (window.innerWidth < 780) {
+    if (window.innerWidth < 1050) {
         if (window.scrollY > 0) {
             mobPatch.style.opacity = "1";
         } else {
