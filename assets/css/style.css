@@ -216,7 +216,7 @@ ul li:hover::after{
     position: relative;
 }
 .hov-btn:hover .btn-dropdown{
-    bottom: -5vw;
+    bottom: -4.9vw;
     opacity: 1;
 }
 .btn-hov{
