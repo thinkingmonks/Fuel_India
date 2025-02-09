@@ -760,7 +760,7 @@ ul li:hover::after{
 }
 .popup-content {
     position: relative;
-    display: block;
+    display: flex;
     width: 50%;
     height: 42vw;
     overflow: visible;
@@ -1743,7 +1743,7 @@ display: flex;
     gap: 1vw;
 }
 .carousel-item {
-    display: inline-block;
+    display: flex;
     min-width: calc(10% / var(--items-per-page)); /* Display 3 items at a time */
     box-sizing: border-box;
     text-align: center;
@@ -2612,8 +2612,17 @@ display: flex;
     }
     .popup-content {
         width: 90%;
-        height: 50vh;
+        min-height: 100vw;
         border-radius: 4vw;
+        align-items: center;
+        justify-content: center;
+    }
+    .popup {
+        align-items: center;
+    }
+    .patch-black {
+        height: auto;
+        margin-bottom: 4vw;
     }
     .pop-up-patch {
         align-items: start;
@@ -2657,6 +2666,13 @@ display: flex;
     .over-head .sTri {
         left: 19vw;
         top: -8vw;
+    }
+    .over-close-btn {
+        top: -5.5vw;
+        right: 2vw;
+        width: 3vw;
+        height: 3vw;
+        font-size: 6vw;
     }
     .over-des {
         font-family: 'fBook';
@@ -2885,6 +2901,9 @@ display: flex;
     width: 100%;
     height: 25vw;
 }
+.logo-section {
+    height: 22vw;
+}
 /* testimonial */
 #testimonial {
     width: 100%;
@@ -2921,7 +2940,7 @@ display: flex;
     height: 10vw;
 }
 #testimonial .test-img img {
-    width: 8vw;
+    width: 15vw;
     border-radius: 50%;
 }
 .test-img {
@@ -2960,7 +2979,7 @@ display: flex;
     height: 10vw;
 }
 #high-vid {
-    width: 180%;
+    width: 100%;
 }
 .high-head .sTri {
     right: -6vw;
@@ -3357,6 +3376,9 @@ display: flex;
         font-size: 8vw;
     }
     /* overview */
+    .hov-btn:hover .btn-dropdown {
+        bottom: -9vw;
+    }
     #overview{
         height: auto;
         align-items: center;  
@@ -3395,18 +3417,19 @@ display: flex;
         font-size: 2.5vw;
         line-height: 3vw;
         text-align: justify;
-        gap: 3vw;
+        gap: 6vw;
     }
     .connect-btn {
         width: 30vw;
         height: 4vw;
         font-size: 2.5vw;
+        gap: 6vw;
     }
     .arrow-img {
         width: 2.5vw;
     }
     .arrow {
-        right: 3.5vw;
+        right: 1.5vw;
         width: 4vw;
         height: 4vw;
     }
@@ -3427,7 +3450,7 @@ display: flex;
         margin-left: 4vw;
     }
     .connect-btn:hover .arrow {
-        width: 25vw;
+        width: 29.5vw;
     }
     /* numbers */
     #numbers{
@@ -3596,6 +3619,11 @@ display: flex;
     width: 100%;
     height: 20vw;
 }
+.logo-section{
+    height: 20vw;
+    transform: translateX(-15vw);
+    width: 150%;
+}
 /* testimonial */
 #testimonial {
     width: 100%;
@@ -3671,7 +3699,7 @@ display: flex;
     height: 10vw;
 }
 #high-vid {
-    width: 180%;
+    width: 100%;
 }
 .high-head .sTri {
     right: -6vw;
@@ -3685,13 +3713,24 @@ display: flex;
 }
 #gallery .owl-carousel .owl-nav {
     width: 110%;
-    transform: translateX(-4vw);
 }
 #gallery .owl-carousel .owl-nav button {
     width: 8vw;
     height: 8vw;
     border-radius: 50%;
     font-size: 6vw;
+}
+.fuel-boxes {
+    gap: 1vw;
+    width: 90%;
+    height: 12vw;
+    align-items: center;
+    justify-content: space-between;
+}
+.gallery-container {
+    position: relative;
+    width: 100%;
+    height: 26vw;
 }
 /* tagline */
 #tagline {
@@ -3800,7 +3839,7 @@ display: flex;
     width: 100%;
     justify-content: center;
     flex-direction: column;
-    gap: 2vw;
+    gap: 8vw;
     padding: 2vw 0;
 }
 .footer-box {
@@ -3836,5 +3875,14 @@ display: flex;
 .foot-tag {
     width: 100%;
     height: 30vw;
+}
+.map-left{
+    width: 100%;
+    height: 35vw;
+}
+.fuel-boxes {
+    gap: 1vw;
+    width: 90%;
+    height: 12vw;
 }
 }
