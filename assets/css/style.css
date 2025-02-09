@@ -2433,8 +2433,20 @@ display: flex;
         width: 20vw;
         position: fixed ;
         top: 6vw;
-        left: 2vw;
+        left: 6vw;
         z-index: 900;
+    }
+    .mob-patch{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        height: 8vh;
+        backdrop-filter: blur(2px);
+        opacity: 0;
+        background-color: #00000094;
+        transition: all ease .4s;
     }
     #navbar{
         position: fixed;
@@ -2559,6 +2571,10 @@ display: flex;
         width: 15vw;
         height: 15vw;
         bottom: -15vw;
+    }
+    #special-projects .sTri {
+        right: -8.6vw;
+        top: -8vw;
     }
     .h-head {
         font-size: 5vw;
@@ -2737,8 +2753,8 @@ display: flex;
         width: 90%;
     }
     .services-head .sTri {
-        right: -13.5vw;
-        top: -9.5vw;
+        right: -8.5vw;
+        top: -11.5vw;
     }
     .services-des {
         font-family: 'fBook';
@@ -2864,6 +2880,9 @@ display: flex;
     width: 42vw;
     height: 55vw;
 }
+.tBlank{
+    display: none;
+}
 .t-name {
     font-size: 3.4vw;
 }
@@ -2917,8 +2936,8 @@ display: flex;
 .test-head .sTri {
     width: 10vw;
     height: 10vw;
-    left: -11vw;
-    top: 5.5vw;
+    left: -6vw;
+    top: 3.5vw;
 }
 .test-box {
     width: 70vw;
@@ -3150,7 +3169,7 @@ display: flex;
     width: 100%;
     justify-content: center;
     flex-direction: column;
-    gap: 2vw;
+    gap: 8vw;
     padding: 2vw 0;
 }
 .footer-box {
@@ -3196,6 +3215,18 @@ display: flex;
     }
     .company-logo{
         display: none;
+    }
+    .mob-patch{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 10vh;
+        height: 8vh;
+        z-index: 100;
+        backdrop-filter: blur(2px);
+        background-color: #00000094;
+        transition: all ease .4s;
     }
     .mob-logo{
         display: block;
@@ -3393,6 +3424,7 @@ display: flex;
     .over-left {
         width: 100%;
         height: 100%;
+        justify-content: center;
     }
     .vid-cont {
         border-radius: 5vw;
@@ -3586,6 +3618,9 @@ display: flex;
     width: 42vw;
     height: 55vw;
 }
+.tBlank{
+    display: none;
+}
 .t-name {
     font-size: 3vw;
 }
@@ -3730,7 +3765,11 @@ display: flex;
 .gallery-container {
     position: relative;
     width: 100%;
-    height: 26vw;
+    height: 38vw;
+}
+.filter-name {
+    padding: 1vw 2.5vw;
+    font-size: 1.9vw;
 }
 /* tagline */
 #tagline {

@@ -1,18 +1,40 @@
 // navbar
-const navEl=document.querySelector('#navbar')
-window.addEventListener('scroll' ,( ) =>{
-if(window.scrollY >= 56){
-  navEl.classList.add('navbar-scrolled');
-}
-else if(window.scrollY <=56){
-  navEl.classList.remove('navbar-scrolled');
-}
+const navEl = document.querySelector('#navbar');
+
+window.addEventListener('scroll', () => {
+    if (window.innerWidth >= 780) { // Only apply on screens >= 768px
+        if (window.scrollY >= 56) {
+            navEl.classList.add('navbar-scrolled');
+        } else {
+            navEl.classList.remove('navbar-scrolled');
+        }
+    } else {
+        navEl.classList.remove('navbar-scrolled'); // Ensure it's removed on smaller screens
+    }
 });
 
-window.addEventListener('load', function () {
-  const loader = document.getElementById('loader');
-  loader.classList.add('hidden');
+const mobPatch = document.querySelector(".mob-patch");
+
+window.addEventListener("scroll", () => {
+    if (window.innerWidth < 780) {
+        if (window.scrollY > 0) {
+            mobPatch.style.opacity = "1";
+        } else {
+            mobPatch.style.opacity = "0";
+        }
+    } else {
+        mobPatch.style.opacity = "0"; // Ensure opacity is reset on larger screens
+    }
 });
+
+// Loader functionality
+window.addEventListener('load', function () {
+    const loader = document.getElementById('loader');
+    if (loader) {
+        loader.classList.add('hidden');
+    }
+});
+
 
 // function scrollToSection(event, sectionId) {
 //   event.preventDefault(); // Prevent default anchor behavior
