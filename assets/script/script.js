@@ -201,7 +201,7 @@ document.addEventListener("DOMContentLoaded", function () {
     else if (folderPath === "assets/images/ourWorks/rs@100") {
       imagePaths = [
           folderPath + "/interactive-music-exhibit.webp",
-          folderPath + "/interactive-music-exhibit.webp",
+          folderPath + "/ravi-shankar-100-years.webp",
           folderPath + "/ravi-shankar-sitar-display.webp",
           folderPath + "/ravi-shankar-sitar-exhibit.webp",
       ];
