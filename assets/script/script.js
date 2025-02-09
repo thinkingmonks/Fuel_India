@@ -156,11 +156,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 folderPath + "/indian-music-experience-interactive-exhibit.webp",
                 folderPath + "/indian-music-experience-sound-garden.webp",
                 folderPath + "/indian-music-experience-tabla-display.webp",
-                filderPath + "/indian-music-experience-visitors-exploring.webp"
+                folderPath + "/indian-music-experience-visitors-exploring.webp"
             ];
         } else if (folderPath === "assets/images/ourWorks/bs") {
             imagePaths = [
-                folderPath + "/birdsong-exhibit-crowd.webps",
+                folderPath + "/birdsong-exhibit-crowd.webp",
                 folderPath + "/birdsong-exhibition-2023-banner.webp",
                 folderPath + "/birdsong-exhibition-2023-gallery-overview.webp",
                 folderPath + "/birdsong-exhibition-2023-installation-view..webp",
@@ -200,9 +200,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     else if (folderPath === "assets/images/ourWorks/rs@100") {
       imagePaths = [
-          folderPath + "/rs1.webp",
-          folderPath + "/rs2.webp",
-          folderPath + "/rs3.webp",
+          folderPath + "/interactive-music-exhibit.webp",
+          folderPath + "/interactive-music-exhibit.webp",
+          folderPath + "/ravi-shankar-sitar-display.webp",
+          folderPath + "/ravi-shankar-sitar-exhibit.webp",
       ];
   }
         callback();
