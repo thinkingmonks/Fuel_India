@@ -169,13 +169,11 @@ document.addEventListener("DOMContentLoaded", function () {
         // Simulate loading images by defining them manually (server logic needed for dynamic loading)
         if (folderPath === "assets/images/ourWorks/ime") {
             imagePaths = [
-                folderPath + "/ime-carnatic-music-timeline.webp",
                 folderPath + "/ime-folk-music-live-event.webp",
+                folderPath + "/ime-carnatic-music-timeline.webp",
                 folderPath + "/ime-live-concert-classical-music.webp",
                 folderPath + "/ime-music-workshop-children.webp",
                 folderPath + "/ime-rare-instruments-collection.webp",
-                folderPath + "/indian-music-experience-bollywood-gallery.webp",
-                folderPath + "/indian-music-experience-interactive-exhibit.webp",
                 folderPath + "/indian-music-experience-sound-garden.webp",
                 folderPath + "/indian-music-experience-tabla-display.webp",
                 folderPath + "/indian-music-experience-visitors-exploring.webp"
