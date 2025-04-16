@@ -352,34 +352,35 @@ document.addEventListener("DOMContentLoaded", function () {
   const popup = document.getElementById("over-popup");
   const high = document.getElementById("high-vid");
   const closeBtn = document.querySelector(".over-close-btn");
-  const iframe = document.getElementById("videoFrame");
-  // const youtubeURL = "https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1"; // Replace with actual video ID
+  const video = document.getElementById("videoFrame"); // Renamed for clarity
 
   vidCont.addEventListener("click", function () {
-      // iframe.src = youtubeURL;
-      popup.style.display = "flex";
+    popup.style.display = "flex";
+    video.play(); // Optional: start playing again when popup opens
   });
 
-  high.addEventListener("click", function (){
-  // iframe.src = youtubeURL;
-  popup.style.display = "flex";
-});
+  high.addEventListener("click", function () {
+    popup.style.display = "flex";
+    video.play(); // Optional
+  });
 
   closeBtn.addEventListener("click", function () {
-      closePopup();
+    closePopup();
   });
 
   window.addEventListener("click", function (e) {
-      if (e.target === popup) {
-          closePopup();
-      }
+    if (e.target === popup) {
+      closePopup();
+    }
   });
 
   function closePopup() {
-      popup.style.display = "none";
-      // iframe.src = ""; // Stop video playback
+    popup.style.display = "none";
+    video.pause();
+    video.currentTime = 0; // Optional: reset video to beginning
   }
 });
+
 
 // Define content for each home-box
 const contentData = {
