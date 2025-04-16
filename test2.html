@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /** Carousel starts here **/
+:root {
+    --items-per-page: 6;
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.carousel-container {
+    white-space: nowrap;
+}
+#carouselContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+.carousel-item {
+    display: inline-block;
+    min-width: calc(10% / var(--items-per-page)); /* Display 3 items at a time */
+    box-sizing: border-box;
+    text-align: center;
+}
+.logo-section {
+  width: 120%;
+  position: relative;
+  overflow: hidden;
+  height: 20vw;
+  top: calc(50% - 10vw);
+  display: flex;
+}
+.logo-wrapper {
+    min-width: calc(10% / var(--items-per-page));
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-wrapper::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 10vw;
+}
+.logo-wrapper:nth-of-type(even) .logo {
+  background: #eee;
+}
+.logo-wrapper .logo {
+  display: grid;
+  place-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 100%;
+}
+.logo-wrapper .logo svg {
+  width: 100%;
+}
+    </style>
+</head>
+<body>
+    
+    <div id="our-clients">
+        <div class="our-container">
+            <h2 class="our-head title" data-aos="fade-down"><span>OUR CLIENTS <img src="assets/images/tri-2.svg"
+                        class="sTri" alt=""></span> </h2>
+            <div class="our-boxes" id="carousel1" aria-label="Logo Carousel">
+                <div class="loop-holder holder1 carousel-container">
+                    <div class="loop-holder__text looptext1" id="carouselContainer">
+                        <div class="our-logo carousel-item"><img src="assets/images/logo/116473.Shriram.webp"
+                                alt="Shriram Properties is India's leading residential real estate developer focused on affordable housing categories across Bangalore, Chennai, Vizag, Kolkata & Coimbatore.">
+                        </div>
+                        <div class="our-logo carousel-item"><img src="assets/images/logo/ADI logo.webp"
+                                alt="ADI vision is to be a world class network representing professional interests of Indian Design community, creating a meaningful interface between design professionals, people as users, the industry, education institutions and the policy makers.">
+                        </div>
+                        <div class="our-logo carousel-item"><img src="assets/images/logo/ALLEN logo.webp"
+                                alt="ALLEN - India's best coaching institute for NEET, IIT JEE, and classes 6 to 10 with 36 years of experience offering unparalleled personalized guidance. Join today and embark on a journey to academic excellence.">
+                        </div>
+                        <div class="our-logo carousel-item"><img src="assets/images/logo/Alliance University Logo.webp"
+                                alt="Alliance University Campus in Bangalore has state-of-the-art infrastructure with serene ambience. We offer graduate, post-graduate and certification courses.">
+                        </div>
+                        <div class="our-logo carousel-item"><img src="assets/images/logo/Aster Hospital.webp"
+                                alt="Aster CMI is one of the best multi-specialty Hospital in Bangalore that offers the best medical care for all your ailments with clinical excellence, cutting edge technology, and personalized service.">
+                        </div>
+                        <div class="our-logo carousel-item"><img src="assets/images/logo/Ather Logo.webp"
+                                alt="Ather Energy - Building fast and intelligent electric scooters in India"
+                                style="width: 100%;"></div>
+                        <div class="our-logo carousel-item"><img src="assets/images/logo/Brindavan Group of Institutions.webp"
+                                style="width: 65%;" alt="Brindavan Group of Institutions"></div>
+                        <div class="our-logo carousel-item"><img src="assets/images/logo/British Biological Logo.webp"
+                                alt="Welcome to British Biologicals, We are ‘The Protein People’"></div>
+                        <div class="our-logo carousel-item"><img src="assets/images/logo/Coca Cola Logo-01.webp"
+                                alt="A woman smiles as she holds a skateboard overhead featuring 5 Coca-Cola brands"
+                                style="width: 70%;"></div>
+                        <div class="our-logo carousel-item"><img src="assets/images/logo/collins (1)-01.webp"
+                                alt="At Collins Aerospace, we’re working side-by-side with our customers and partners to dream, design and deliver solutions that redefine the future of our industry. By reaching across the markets we serve and drawing on our vast portfolio of expertise, we are making the most powerful concepts in aerospace a reality every day. Explore all the ways we’re redefining aerospace with one of the deepest capability sets and broadest perspectives in the industry.">
+                        </div>
+                        <div class="our-logo carousel-item"><img src="assets/images/logo/Flow Logo.webp" style="width: 50%"
+                                alt="About Flow Realty We are one of the biggest sales outsourcing partners or mandate players in South India, with a success rate of over 90% in the last 3 years. Whether it is a new launch or a stressed project turnaround, you can count on us to break the sales puzzle and deliver what you">
+                        </div>
+                        <div class="our-logo carousel-item"><img src="assets/images/logo/Gokaldas Logo.webp"
+                                alt="Gokaldas Exports | Leading manufacturer & exporter of apparels across the world">
+                        </div>
+
+                    </div>
+                </div>
+                    <div  class="logo-section">
+                        <div class="our-logo logo-wrapper"><img src="assets/images/logo/Kirloskar Logo.webp" style="opacity: 0;"
+                            alt="Welcome to the official website of Kirloskar, Explore the legacy of Kirloskar Group - Your trusted source for information about Kirloskar Companies with over 130 years of industrial excellence">
+                    </div>
+                        <div class="our-logo logo-wrapper"><img src="assets/images/logo/Kirloskar Logo.webp"
+                                alt="Welcome to the official website of Kirloskar, Explore the legacy of Kirloskar Group - Your trusted source for information about Kirloskar Companies with over 130 years of industrial excellence">
+                        </div>
+                        <div class="our-logo logo-wrapper"><img src="assets/images/logo/Lawasia Logo-01.webp" alt="Lawasia"></div>
+                        <div class="our-logo logo-wrapper"><img src="assets/images/logo/Maruti Suzuki Logo-01.webp"
+                                alt="Maruti Suzuki Cars in India: Price, Mileage, Features & Specifications | Maruti Suzuki Arena">
+                        </div>
+                        <div class="our-logo logo-wrapper"><img src="assets/images/logo/Medical Mentor Logo.webp"
+                                alt="Achieve your medical career goals with NEET UG and NEET PG counselling guidance by Medical Mentor. Personalized handholding till admission since 2016. Book your free 1-to-1 counselling session today!">
+                        </div>
+                        <div class="our-logo logo-wrapper"><img src="assets/images/logo/MT EDUCARE.webp"
+                                alt="Achieve your medical career goals with NEET UG and NEET PG counselling guidance by Medical Mentor. Personalized handholding till admission since 2016. Book your free 1-to-1 counselling session today!">
+                        </div>
+                        <div class="our-logo logo-wrapper"><img src="assets/images/logo/Pratt & Whitney Logo.webp"
+                                alt="Transforming the future of aviation">
+                            </div>
+                        <div class="our-logo logo-wrapper"><img src="assets/images/logo/Reva university Logo.webp"
+                                alt="REVA University is one of the leading universities in Bangalore offering a range of undergraduate, postgraduate, diploma and PhD programmes. Explore our diverse range of programs and state-of-the-art facilities for cutting-edge education and diverse learning experiences.">
+                        </div>
+                        <div class="our-logo logo-wrapper"><img src="assets/images/logo/Withum Logo.webp"
+                                alt="Withum is a nationally ranked advisory and public accounting firm providing to businesses and individuals on a local-to-global scale.">
+                        </div>
+                        <div class="our-logo logo-wrapper"><img src="assets/images/logo/WorldatWork Logo.webp"
+                                alt="WorldatWork is dedicated to elevating employee experiences and driving organizational performance through rewards, offering education, leadership and community.">
+                        </div>
+                        <div class="our-logo logo-wrapper"><img src="assets/images/logo/YAHOO Logo.webp"
+                                alt="The search engine that helps you find exactly what you're looking for. Find the most relevant information, video, images, and answers from all across the Web.">
+                        </div>
+                        <div class="our-logo logo-wrapper"><img src="assets/images/logo/Zensar_Technologies_logo.webp"
+                                alt="Zensar is a global organization which conceptualizes, builds, and manages digital products through experience design, data engineering, and advanced analytics for over 200 leading companies. Our solutions leverage industry-leading platforms to help our clients be competitive, agile, and disruptive while moving with velocity through change and opportunity.">
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script>
+    const carouselContainer = document.getElementById('carouselContainer');
+
+// Clone the carousel content to create a continuous loop
+document.addEventListener("DOMContentLoaded", function () {
+    const carouselContainer = document.getElementById("carouselContainer");
+
+    if (!carouselContainer) {
+        console.error("carouselContainer not found.");
+        return;
+    }
+
+    // Duplicate items for infinite loop
+    const carouselItems = carouselContainer.innerHTML;
+    carouselContainer.innerHTML += carouselItems;
+
+    gsap.to("#carouselContainer", {
+        x: "-50%", // Move half of the duplicated items
+        duration: 20, // Adjust the speed as needed
+        ease: "none",
+        repeat: -1
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const logos = Array.from(document.querySelectorAll(".logo-wrapper")); // Correct selector
+
+    if (logos.length === 0) {
+        console.error("No elements with class 'logo-wrapper' found.");
+        return;
+    }
+
+    gsap.set(logos, { autoAlpha: 1 });
+
+    logos.forEach((logo, i) => {
+        gsap.set(logo, { xPercent: -100 * i }); // Proper positioning
+    });
+
+    if (logos.length > 7) {
+        const logosWrap = gsap.utils.wrap(0, (logos.length - 1) * 100);
+        const duration = logos.length * 2.5;
+
+        gsap.to(logos, {
+            xPercent: `+=${logos.length * 100}`, // Moves left to right
+            duration,
+            repeat: -1,
+            ease: "none",
+            modifiers: {
+                xPercent: (xPercent) => logosWrap(parseFloat(xPercent)),
+            },
+        });
+    }
+});
+
+
+</script>
+</body>
+</html>
