@@ -935,12 +935,29 @@ ul li:hover::after{
 .vid-cont{
     position: relative;
     width: fit-content;
-    height: fit-content;
+    height: 26vw;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 2vw;
     overflow: hidden;
+}
+.over-vid-patch{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+#over-vid{
+    object-fit: contain;
+    height: 100%;
+}
+#iframe-pop{
+    width: 50vw;
+    height: auto;
 }
 .video-container video {
     width: 140%;
@@ -1827,7 +1844,7 @@ display: flex;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     border-radius: 2vw;
     background-color: #fff;
     padding: .5vw;
@@ -1844,6 +1861,7 @@ display: flex;
     align-self: flex-end;
     margin-bottom: 3vw;
     margin-right: 1.5vw;
+    margin-top: 1vw;
 }
 .test-names{
     width: 20vw;
@@ -1860,9 +1878,15 @@ display: flex;
 .test-des{
     font-size: 1.2vw;
     font-family: 'fBook';
-    line-height: 1.4vw;
+    line-height: 1.3vw;
     width: 90%;
     height: 9vw;
+}
+.tbl .test-patch img{
+    margin-bottom: 1.5vw !important;
+}
+.tbl .test-des{
+    overflow-y: scroll;
 }
 .test-img{
     width: 5vw;
@@ -2654,9 +2678,6 @@ display: flex;
         padding: 15vw 0 0vw;
         height: 88vh;
     }
-    #videoFrame{
-        width: 90%;
-    }
     .overview-container {
         width: 90%;
         height: auto;
@@ -2671,6 +2692,17 @@ display: flex;
     }
     .vid-cont {
         border-radius: 5vw;
+        
+        width: 100%;
+        height: 50vw;
+    }
+    #over-vid{
+        width: 100%;
+        height: 100%;
+    }
+    iframe{
+        width: 100%;
+        height: 230px;
     }
     .video-svg {
         width: 10vw;
@@ -3419,11 +3451,6 @@ display: flex;
         align-items: center;  
         padding: 30vw 0 18vw;
     }
-    .over-close-btn {
-        top: 8.5vw;
-        right: 2vw;
-        font-size: 4vw;
-    }
     .overview-container {
         width: 90%;
         height: auto;
@@ -3437,6 +3464,16 @@ display: flex;
     }
     .vid-cont {
         border-radius: 5vw;
+        width: 100%;
+        height: 50vw;
+    }
+    #over-vid{
+        width: 100%;
+        height: 100%;
+    }
+    iframe{
+        width: 100%;
+        height: 400px;
     }
     .video-svg {
         width: 10vw;
