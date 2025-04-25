@@ -350,20 +350,18 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const vidCont = document.querySelector(".vid-cont");
   const popup = document.getElementById("over-popup");
-  const high = document.getElementById("high-vid");
   const closeBtn = document.querySelector(".over-close-btn");
-  const video = document.getElementById("videoFrame"); // Renamed for clarity
+  const iframe = document.getElementById("popup-iframe"); // updated
+  const patch = document.querySelector(".over-vid-patch");
+  const youtubeURL = "https://www.youtube.com/embed/mong3oxzUFU?autoplay=1"; // use real video ID
 
-  vidCont.addEventListener("click", function () {
+  // Patch click
+  patch.addEventListener("click", function () {
+    iframe.src = youtubeURL;
     popup.style.display = "flex";
-    video.play(); // Optional: start playing again when popup opens
   });
 
-  high.addEventListener("click", function () {
-    popup.style.display = "flex";
-    video.play(); // Optional
-  });
-
+  // Close logic
   closeBtn.addEventListener("click", function () {
     closePopup();
   });
@@ -376,11 +374,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function closePopup() {
     popup.style.display = "none";
-    video.pause();
-    video.currentTime = 0; // Optional: reset video to beginning
+    iframe.src = ""; // reset to stop video
   }
 });
-
 
 // Define content for each home-box
 const contentData = {
