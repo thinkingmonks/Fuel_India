@@ -1880,7 +1880,7 @@ display: flex;
     font-family: 'fBook';
     line-height: 1.3vw;
     width: 90%;
-    height: 9vw;
+    height: 8vw;
 }
 .tbl .test-patch img{
     margin-bottom: 1.5vw !important;
@@ -1904,6 +1904,10 @@ display: flex;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+#testimonial .tbl .test-img img {
+    width: 3.5vw;
+    margin-top: 1vw;
 }
 /* highlights */
 #highlights{
@@ -1989,8 +1993,8 @@ display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 5vw;
-    transform: translateY(-6vw);
+    padding-top: 2vw;
+    transform: translateY(-3vw);
 }
 .gallery-container{
     position: relative;
